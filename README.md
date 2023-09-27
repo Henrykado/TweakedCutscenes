@@ -30,7 +30,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 17 Sonic and Tails reunite in Red Mountain - Sonic is now able to jump onto the Tornado 2 (without bouncing off of one of the lamps).  
 102 After Egg Carrier transformation - Sonic no longer looks too high up, making his pupils leave his eyes.  
 104 After Sky Deck - Tails falls earlier so he can hear what Sonic is saying.  
-1A Eggman takes Birdie - Gamma's theme plays when he appears; Sonic looks at Gamma before the other characters stop looking at Eggman.  
+1A Eggman takes Birdie's emerald - Gamma's theme plays when he appears; Sonic looks at Gamma before the other characters stop looking at Eggman.  
 1B After Gamma - The music stops after Amy interrupts Sonic; Sadness plays while Amy is explaining how Gamma is different; Music stops again after rumble, and then the Egg Carrier theme begins playing again after Amy asks Sonic what he will do next.  
 1D After Chaos 6 - Removed the second jump Sonic does, the one where you can see the Eggmoble getting stuck in the Egg Carrier.  
 20 Perfect Chaos mural - Removed random spindash sound.  
@@ -55,7 +55,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 75 Amy is kidnapped by Zero Part 2 - Sonic now walks farther, so he doesn't stop walking before the cutscene ends.  
 65 Amy is released by Gamma - The "Now, now. Calm down" voice line fades out at the end, instead of abruptly ending; Gamma no longer bumps on the wall while walking towards Amy's cell; Removed Birdie's movement delay on Amy's "Nope!" action; Amy's animation is reset when letting go of Birdie.  
 68 Tikal - Some Chao sounds removed and others made quieter.  
-69 Eggman takes Birdie - Music stops when Gamma appears.  
+69 Eggman takes Birdie's emerald - Music stops when Gamma appears.  
 6A After Sonic beats Gamma - Music stops after rumble, and then the Egg Carrier theme begins playing again after Amy asks Sonic what he will do next; Removed Amy running towards Tails' direction, so it doesn't look like she teleported.  
 6D After escaping the Egg Carrier - Amy no longer moves downward while being carried by Tails; Amy looks at Birdie while talking with him.  
 6F Before Final Egg - Cutscene ends earlier.  
@@ -64,7 +64,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 
 ### Knuckles:  
 80 Intro - Knuckles now does an unused blinking animation after the Master Emerald shatters; Knuckles is no longer rotated because of the altar after trying to punch Chaos 0; Knuckles now says "Oomph" earlier; Removed the "Wow! That's incredible" voice line from the english dub.  
-87 Before Chaos 2 - Edited weird Chaos Emerald movement; Knuckles now looks at Chaos 2, instead of his legs.  
+87 Before Chaos 2 - Tweaked weird Chaos Emerald movement; Knuckles now looks at Chaos 2, instead of his legs.  
 88 Eggman tricks Knuckles - Knuckles' pensive walk is faster.  
 8B Before Chaos 4, 8C After Chaos 4 - Similar changes to the ones i made to Sonic's version of the cutscene.  
 91 After 2nd Past - The message box now only appears when Knuckles says "What..."; The camera no longer goes inside the Master Emerald while it's displaying the Egg Carrier.  
