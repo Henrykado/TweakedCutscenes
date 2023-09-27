@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1ea49194-dfeb-4395-93c9-14db81983b7e}</ProjectGuid>
+    <RootNamespace>SADXcutscenedecompilation</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)sadx-mod-loader\SADXModLoader\include;$(SolutionDir)SADX-cutscene-decompilation\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Amy\ev0060_a_intro1.cpp" />
+    <ClCompile Include="Amy\ev0061_a_intro2.cpp" />
+    <ClCompile Include="Amy\ev0062_a_meetsonic.cpp" />
+    <ClCompile Include="Amy\ev0063_a_twinklepark.cpp" />
+    <ClCompile Include="Amy\ev0064_a_kidnapped.cpp" />
+    <ClCompile Include="Amy\ev0065_a_prison.cpp" />
+    <ClCompile Include="Amy\ev0067_a_past.cpp" />
+    <ClCompile Include="Amy\ev0068_a_tikal.cpp" />
+    <ClCompile Include="Amy\ev0069_a_eggmantakesbirdie.cpp" />
+    <ClCompile Include="Amy\ev006A_a_escapecarrier.cpp" />
+    <ClCompile Include="Amy\ev006D_a_savebirdsbros.cpp" />
+    <ClCompile Include="Amy\ev006E_a_junglebase.cpp" />
+    <ClCompile Include="Amy\ev006F_a_finalegg.cpp" />
+    <ClCompile Include="Amy\ev0070_a_returncarrier.cpp" />
+    <ClCompile Include="Amy\ev0071_a_amygetangry.cpp" />
+    <ClCompile Include="Amy\ev0072_a_outro.cpp" />
+    <ClCompile Include="Amy\ev0075_a_kidnapped2.cpp" />
+    <ClCompile Include="Big\ev00D0_b_intro.cpp" />
+    <ClCompile Include="Big\ev00D1_b_stationsquare.cpp" />
+    <ClCompile Include="Big\ev00D2_b_car.cpp" />
+    <ClCompile Include="Big\ev00D3_b_tails.cpp" />
+    <ClCompile Include="Big\ev00D4_b_emeraldcoast.cpp" />
+    <ClCompile Include="Big\ev00D8_b_eggcarrier.cpp" />
+    <ClCompile Include="Big\ev00D9_b_hotsheltertank.cpp" />
+    <ClCompile Include="Big\ev00DC_b_tikal.cpp" />
+    <ClCompile Include="Big\ev00DD_b_leavepast.cpp" />
+    <ClCompile Include="Big\ev00DE_b_chaos6.cpp" />
+    <ClCompile Include="Big\ev00E2_b_outro.cpp" />
+    <ClCompile Include="E102\ev00B2_e_afterfinalegg.cpp" />
+    <ClCompile Include="E102\ev00B4_e_e101.cpp" />
+    <ClCompile Include="E102\ev00B5_e_betadefeated.cpp" />
+    <ClCompile Include="E102\ev00B7_e_fanfare.cpp" />
+    <ClCompile Include="E102\ev00BA_e_tikal.cpp" />
+    <ClCompile Include="E102\ev00BB_e_deliverfrog.cpp" />
+    <ClCompile Include="E102\ev00BC_e_enterwrongroom.cpp" />
+    <ClCompile Include="E102\ev00BD_e_e101factory.cpp" />
+    <ClCompile Include="E102\ev00BE_e_exitwrongroom.cpp" />
+    <ClCompile Include="E102\ev00BF_e_prison.cpp" />
+    <ClCompile Include="E102\ev00C0_e_reportrear.cpp" />
+    <ClCompile Include="E102\ev00C1_e_sonic.cpp" />
+    <ClCompile Include="E102\ev00C2_e_escapecarrier.cpp" />
+    <ClCompile Include="E102\ev00C7_e_outro.cpp" />
+    <ClCompile Include="E102\ev0142_e_betamk2.cpp" />
+    <ClCompile Include="Knuckles\ev0080_k_intro.cpp" />
+    <ClCompile Include="Knuckles\ev0085_k_tikalfather.cpp" />
+    <ClCompile Include="Knuckles\ev0086_k_leavepastfirst.cpp" />
+    <ClCompile Include="Knuckles\ev0087_k_chaos2.cpp" />
+    <ClCompile Include="Knuckles\ev0088_k_eggmantricksknuckles.cpp" />
+    <ClCompile Include="Knuckles\ev008A_k_vssonic.cpp" />
+    <ClCompile Include="Knuckles\ev008B_k_chaos4.cpp" />
+    <ClCompile Include="Knuckles\ev008C_k_afterchaos4.cpp" />
+    <ClCompile Include="Knuckles\ev008F_k_tikalaltar.cpp" />
+    <ClCompile Include="Knuckles\ev0091_k_leavepastsecond.cpp" />
+    <ClCompile Include="Knuckles\ev0092_k_followgamma.cpp" />
+    <ClCompile Include="Knuckles\ev0095_k_gotlastpieces.cpp" />
+    <ClCompile Include="Knuckles\ev0099_k_beforechaos6.cpp" />
+    <ClCompile Include="Knuckles\ev009A_k_glubglub.cpp" />
+    <ClCompile Include="Knuckles\ev009B_k_afterchaos6.cpp" />
+    <ClCompile Include="Knuckles\ev009D_k_restoreme.cpp" />
+    <ClCompile Include="Knuckles\ev00A0_k_eggmanhotel.cpp" />
+    <ClCompile Include="Knuckles\ev0120_k_ectransform1.cpp" />
+    <ClCompile Include="Knuckles\ev0121_k_ectransform2.cpp" />
+    <ClCompile Include="Knuckles\ev0122_k_outsideskydeck.cpp" />
+    <ClCompile Include="objects.cpp" />
+    <ClCompile Include="mod.cpp" />
+    <ClCompile Include="Sonic\ev0002_s_chaos0defeated.cpp" />
+    <ClCompile Include="Sonic\ev0003_s_tailscrash.cpp" />
+    <ClCompile Include="Sonic\ev0006_s_poolsidewithtails.cpp" />
+    <ClCompile Include="Sonic\ev0007_s_egghornetintro.cpp" />
+    <ClCompile Include="Sonic\ev0008_s_chaos1.cpp" />
+    <ClCompile Include="Sonic\ev0009_s_aftercasinopolis.cpp" />
+    <ClCompile Include="Sonic\ev000B_s_beforechaos4.cpp" />
+    <ClCompile Include="Sonic\ev000C_s_afterchaos4.cpp" />
+    <ClCompile Include="Sonic\ev000D_s_tornado1.cpp" />
+    <ClCompile Include="Sonic\ev0011_s_fallingtoSS.cpp" />
+    <ClCompile Include="Sonic\ev0012_s_meetingamy.cpp" />
+    <ClCompile Include="Sonic\ev0013_s_beforetwinklepark.cpp" />
+    <ClCompile Include="Sonic\ev0016_s_zeroboardsec.cpp" />
+    <ClCompile Include="Sonic\ev0017_s_tailsreunion.cpp" />
+    <ClCompile Include="Sonic\ev001A_s_eggmantakesbirdie.cpp" />
+    <ClCompile Include="Sonic\ev001B_s_aftergamma.cpp" />
+    <ClCompile Include="Sonic\ev001C_s_beforechaos6.cpp" />
+    <ClCompile Include="Sonic\ev001D_s_afterchaos6.cpp" />
+    <ClCompile Include="Sonic\ev001E_s_lostworld.cpp" />
+    <ClCompile Include="Sonic\ev0020_s_mural.cpp" />
+    <ClCompile Include="Sonic\ev0022_s_pastaltar.cpp" />
+    <ClCompile Include="Sonic\ev0023_s_afterpast.cpp" />
+    <ClCompile Include="Sonic\ev0024_s_eggviper.cpp" />
+    <ClCompile Include="Sonic\ev0026_s_outro.cpp" />
+    <ClCompile Include="Sonic\ev0028_s_sonicvsknuckles.cpp" />
+    <ClCompile Include="Sonic\ev002A_s_casinowake.cpp" />
+    <ClCompile Include="Sonic\ev002B_s_beforechaos0.cpp" />
+    <ClCompile Include="Sonic\ev0100_s_ecafterlanding.cpp" />
+    <ClCompile Include="Sonic\ev0101_s_ecfools.cpp" />
+    <ClCompile Include="Sonic\ev0102_s_ecaftertransforming.cpp" />
+    <ClCompile Include="Sonic\ev0104_s_afterskydeck.cpp" />
+    <ClCompile Include="SuperSonic\ev00F0_l_intro.cpp" />
+    <ClCompile Include="SuperSonic\ev00F2_l_eggman.cpp" />
+    <ClCompile Include="SuperSonic\ev00F3_l_knuckles.cpp" />
+    <ClCompile Include="SuperSonic\ev00F4_l_sonicwakesup.cpp" />
+    <ClCompile Include="SuperSonic\ev00F5_l_sonicfindsknuckles.cpp" />
+    <ClCompile Include="SuperSonic\ev00F7_l_tikalplead.cpp" />
+    <ClCompile Include="SuperSonic\ev00F9_l_snoozecruise.cpp" />
+    <ClCompile Include="SuperSonic\ev00FB_l_tikalwakesup.cpp" />
+    <ClCompile Include="SuperSonic\ev00FD_l_perfectchaos.cpp" />
+    <ClCompile Include="SuperSonic\ev00FE_l_outro.cpp" />
+    <ClCompile Include="SuperSonic\ev00FF_l_supersonic.cpp" />
+    <ClCompile Include="SuperSonic\ev0160_l_chaosgetangry.cpp" />
+    <ClCompile Include="Tails\ev0032_t_meetingsonic.cpp" />
+    <ClCompile Include="Tails\ev0033_t_egghornet.cpp" />
+    <ClCompile Include="Tails\ev0034_t_chaos1.cpp" />
+    <ClCompile Include="Tails\ev0035_t_aftercasinopolis.cpp" />
+    <ClCompile Include="Tails\ev0038_t_vsknuckles.cpp" />
+    <ClCompile Include="Tails\ev0039_t_beforechaos4.cpp" />
+    <ClCompile Include="Tails\ev003A_t_afterchaos4.cpp" />
+    <ClCompile Include="Tails\ev003B_t_tornado1.cpp" />
+    <ClCompile Include="Tails\ev003E_t_flashback.cpp" />
+    <ClCompile Include="Tails\ev0040_t_afterflashback.cpp" />
+    <ClCompile Include="Tails\ev0042_t_froggyjungle.cpp" />
+    <ClCompile Include="Tails\ev0044_t_enterpast.cpp" />
+    <ClCompile Include="Tails\ev0045_t_tikal.cpp" />
+    <ClCompile Include="Tails\ev0046_t_big.cpp" />
+    <ClCompile Include="Tails\ev0048_t_sonicreunion.cpp" />
+    <ClCompile Include="Tails\ev004B_t_eggmantakesbirdie.cpp" />
+    <ClCompile Include="Tails\ev004C_t_escapecarrier.cpp" />
+    <ClCompile Include="Tails\ev004D_t_missile.cpp" />
+    <ClCompile Include="Tails\ev004E_t_speedhighway.cpp" />
+    <ClCompile Include="Tails\ev0050_t_eggwalker.cpp" />
+    <ClCompile Include="Tails\ev0052_t_outro.cpp" />
+    <ClCompile Include="Tails\ev0055_t_sandhill.cpp" />
+    <ClCompile Include="Tails\ev0056_t_casinowake.cpp" />
+    <ClCompile Include="Tails\ev0110_t_ecafterlanding.cpp" />
+    <ClCompile Include="Tails\ev0111_t_ecfools.cpp" />
+    <ClCompile Include="Tails\ev0112_t_ecaftertransforming.cpp" />
+    <ClCompile Include="Tails\ev0114_t_afterskydeck.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\SADXEventFunctions.h" />
+    <ClInclude Include="include\SADXEventList.h" />
+    <ClInclude Include="include\SADXEventVariables.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
