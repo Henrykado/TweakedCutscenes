@@ -13,6 +13,15 @@ void ev0038_t_vsknuckles(int state)
 		EV_PadOff();
 		EV_CanselOn();
 		EV_Wait(1);
+		SetBankDir(49); //First two Knuckles punches
+		switch (VoiceLanguage) { //Last punch (voiced)
+		case 0:
+			SetBankDir(69);
+			break;
+		case 1:
+			SetBankDir(70);
+			break;
+		}
 		EV_InitPlayer(0);
 		EV_SetPos(player, 34.939999f, 60.889999f, 427.09f);
 		EV_SetAng(player, 0xED9, 0x79CE, 0xFBF7);

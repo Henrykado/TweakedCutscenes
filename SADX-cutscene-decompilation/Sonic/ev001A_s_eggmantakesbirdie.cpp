@@ -286,13 +286,14 @@ void ev001A_s_eggmantakesbirdie(int state)
 		EV_Msg((msgTbl_ev001A[TextLanguage])[6]); //"\aGamma!"
 		EV_SetAction(player, &action_s_s0038_sonic, &SONIC_TEXLIST, 1.0f, 1, 8);
 		EV_SerifWait();
+		BGM_Stop();
 		EV_FreeObject(&emerald);
 		BLACK2 = COverlayCreate(1.0f, 0.0f, 0.0f, 0.0f, 0.0f);
 		EV_CameraPos(1, 0, 0.0f, 1418.0f, 3590.0f);
 		EV_CameraAng(1, 0, 0xFB00, 0x8000, 0);
 		EV_CameraPerspective(1, 1, 0x1C72);
 		EV_MsgClose();
-		EV_Wait(50);
+		EV_Wait(30);
 		BGM_Play(MusicIDs_thee102);
 		COverlaySetSpeed(BLACK2, -0.1f);
 		EventSe_Oneshot(1339, 0, 0, 0);
