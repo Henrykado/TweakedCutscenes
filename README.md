@@ -21,7 +21,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 08 Before Chaos 1 - The emerald Tails is holding is no longer off-center; Eggman's metal hand thingy now retracts properly; Sonic faces Tails while he's talking instead of blankly staring into the sky.  
 09 After Casinopolis - It takes less time for the emerald to drop after Sonic and Tails get charged by Eggman.  
 0B Before Chaos 4 - Fixed the timing of the first english dub voice line; Added smoke from unused code that appears after Sonic and Knuckles collide; Sonic's "Uh oh" now has mouth movement; Sonic looks at Chaos 4 when he emerges.  
-0C After Chaos 4 - The Eggmoble no longer leaves the green light tube thing that i forgot the name of, the one emitted from the Egg Carrier.  
+0C After Chaos 4 - The Eggmoble now reaches the Egg Carrier, instead of disappearing before getting there.  
 0D Tornado 1 - Removed Sonic's goofy smile.  
 11 Falling to Emerald Coast - The volume of the sound Sonic makes while falling was reduced so it hurts your ears a little less; Changed wait time between camera changes so Sonic doesn't look like he's teleporting.  
 12 Meeting Amy - Fixed Amy and Sonic walking in place for way too long.  
