@@ -34,7 +34,6 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 1B After Gamma - The music stops after Amy interrupts Sonic; Sadness plays while Amy is explaining how Gamma is different; Music stops again after rumble, and then the Egg Carrier theme begins playing again after Amy asks Sonic what he will do next.  
 1D After Chaos 6 - Removed the second jump Sonic does, the one where you can see the Eggmoble getting stuck in the Egg Carrier.  
 20 Perfect Chaos mural - Removed random spindash sound.  
-23 After Past - Fixed camera clipping into the floor when you have Dreamcast Conversion enabled.  
 24 Egg Viper - Sonic no longer plays an idle animation while he's still falling.  
 26 Outro - The screen now fades white before Sonic and Tails start running around Mystic Ruins; Removed Sonic and Tails looking at each other while running.  
 
@@ -46,7 +45,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 42 Tails finds Froggy in the jungle - Froggy no longer jumps above the emerald, so it actually looks like he's picking it up.  
 46 Tails lets go of Froggy - He lets go of Froggy faster after being jumpscared by Big.  
 4C After Gamma - The music stops when Amy interrupts Tails.  
-4D Eggman launches his missile - Music stops exactly when Eggman crashes; Tails only gets spooked by missile after it's properly visible; Tails looks at missile while it flies above him.  
+4D Eggman launches his missile - Amy no longer moves downward while being carried by Tails; Music stops exactly when Eggman crashes; Tails only gets spooked by missile after it's properly visible; Tails looks at missile while it flies above him.  
 
 ### Amy:  
 61 Intro Part 2 - Amy no longer runs past the store then teleports back.  
@@ -104,7 +103,7 @@ FE Outro - Some Chao sounds removed and others made quieter; The Eggmoble now us
 
 
 ### Cutscenes that only have the "minor" changes (the ones i mentioned at the beginning of this list):  
-Sonic - 07 Before Egg Hornet, 13 Before Twinkle Park, 1C Before Chaos 6, 1E Tikal shows Sonic the Lost World, 22 Tikal Tries to stop Perfect Chaos, 28 Sonic is confronted by Knuckles, 101 Eggman changes the Egg Carrier's shape.  
+Sonic - 07 Before Egg Hornet, 13 Before Twinkle Park, 1C Before Chaos 6, 1E Tikal shows Sonic the Lost World, 22 Tikal Tries to stop Perfect Chaos, 23 After Past, 28 Sonic is confronted by Knuckles, 101 Eggman changes the Egg Carrier's shape.  
 Tails - 32 Meeting Sonic, 33 Before Egg Hornet, 56 Waking up near Casinopolis, 3B Tornado 1, 40 After Flashback, 55 Before Past, 44 Past, 45 Tikal, 48 Tails and Sonic reunite in Red Mountain, 111 Eggman changes the Egg Carrier's shape, 50 Before Egg Walker, 52 Outro.  
 Amy - 60 Intro Part 1, 67 Enter Past, 6E Amy finds Eggman's jungle base, 70 Amy heads back to the Egg Carrier.  
 Knuckles - 85 Tikal tries to convince her father, 86 After 1st Past, 8A Knuckles confronts Sonic, 8F Tikal at the Master Emerald altar, 95 Got last Master Emerald pieces, 99 Before Chaos 6, 120 Egg Carrier transforms, 121 Egg Carrier transforms again, 122 Knuckles senses emerald pieces in the Egg Carrier.  
