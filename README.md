@@ -25,7 +25,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 0D Tornado 1 - Removed Sonic's goofy smile.  
 11 Falling to Emerald Coast - The volume of the sound Sonic makes while falling was reduced so it hurts your ears a little less; Changed wait time between camera changes so Sonic doesn't look like he's teleporting.  
 12 Meeting Amy - Fixed Amy and Sonic walking in place for way too long.  
-15 Sonic spots Zero and Amy - Changed Amy's voice line to be muffled, since she's inside of a glass tube.  
+15 Sonic spots Zero and Amy - Changed Amy's voice line to be muffled, since she's inside of a glass tube. (optional)  
 16 Zero and Amy board the Egg Carrier - Sonic now does his "fist closed near his chest" pose after he loses amy (again), instead of just kind of standing there.  
 17 Sonic and Tails reunite in Red Mountain - Sonic is now able to jump onto the Tornado 2 (without bouncing off of one of the lamps).  
 102 After Egg Carrier transformation - Sonic no longer looks too high up, making his pupils leave his eyes.  
@@ -70,11 +70,11 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 8B Before Chaos 4, 8C After Chaos 4 - Similar changes to the ones made to Sonic's version of the cutscene.  
 91 After 2nd Past - The message box now only appears when Knuckles says "What..."; The camera no longer goes inside the Master Emerald while it's displaying the Egg Carrier.  
 92 Following Gamma - Knuckles now stalks Gamma instead of blankly staring the fence.  
-9A Knuckles sees Chaos 6 transform - Knuckles now uses a cutscene mouth compatible walking animation, meaning that his mouth moves while talking now; Knuckles no longer makes the "glub glub" sound after Chaos 6 transforms.  
+9A Knuckles sees Chaos 6 transform - Knuckles now uses a cutscene mouth compatible walking animation (optional), meaning that his mouth moves while talking now; Knuckles no longer makes the "glub glub" sound after Chaos 6 transforms.  
 9D Restoring the Master Emerald - Knuckles no longer clips through the floor while restoring the Master Emerald.  
 
 ### E102 Gamma:  
-B4 Before Beta - Beta no longer dashes backwards, since it's position after dashing is too far away from it's starting position in the boss fight.  
+B4 Before Beta - Beta no longer dashes backwards (optional), since it's position after dashing is too far away from it's starting position in the boss fight.  
 B5 After Beta - Beta's walking sounds are now synced properly.  
 B7 E100 Series meeting - Now plays the Egg Carrier's theme instead of Gamma's theme; Froggy shows up on the screen display when Eggman mentions him.  
 BA Tikal - Some Chao sounds removed and others made quieter.  
@@ -82,7 +82,7 @@ BB Gamma delivers Froggy - Eggman now walks faster, and therefore notices Froggy
 BC Gamma enters the wrong room - Gamma's idle animation is slower; Gamma exclaims "BETA?" while walking backwards.  
 C1 Before Sonic - Eggman leaves earlier/faster.  
 C2 After Sonic - Sonic now looks at Amy when saying "I'll nail that Eggman!".  
-142 Before Beta MK II  - Crazy Robo no longer plays.  
+142 Before Beta MK II  - Crazy Robo no longer plays. (optional)  
 C7 Outro - Beta takes less time to collapse; White birdie only appears after Beta's explosion ends.  
 
 ### Big:  
@@ -98,7 +98,7 @@ F0 Intro - No longer shows the Tornado 2 for a few frames after the fade to blac
 F2 Eggman on Mystic Ruins - No longer plays emerald falling sound after fading to black.  
 F4 Sonic wakes up from nap - Tails only plays his head shaking action/animation after he finishes walking, instead of sliding on the floor while doing it.  
 FB Tikal wakes up - No longer waits 2 seconds in certain conditions before the cutscene actually starts.  
-F9 Snooze Cruise - Tails no longer looks worried when Sonic finally wakes up.  
+F9 Snooze Cruise - Tails no longer looks worried when Sonic finally wakes up. (optional)  
 FF Super Sonic - Amy no longer plays walking animation at the start of the cutscene (only visible on certain ratios wider than 4:3).  
 FE Outro - Some Chao sounds removed and others made quieter; The Eggmoble now uses it's trail vfx while leaving.  
 
