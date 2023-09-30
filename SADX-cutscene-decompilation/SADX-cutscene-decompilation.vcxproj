@@ -71,10 +71,10 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes\</OutDir>
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes [Dev]\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes\</OutDir>
+    <OutDir>C:\Program Files (x86)\Steam\steamapps\common\Sonic Adventure DX\mods\Tweaked Cutscenes [Dev]\</OutDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
@@ -170,6 +170,7 @@
     <ClCompile Include="Big\ev00DD_b_leavepast.cpp" />
     <ClCompile Include="Big\ev00DE_b_chaos6.cpp" />
     <ClCompile Include="Big\ev00E2_b_outro.cpp" />
+    <ClCompile Include="E102\ev00B0_e_intro.cpp" />
     <ClCompile Include="E102\ev00B2_e_afterfinalegg.cpp" />
     <ClCompile Include="E102\ev00B4_e_e101.cpp" />
     <ClCompile Include="E102\ev00B5_e_betadefeated.cpp" />
@@ -185,6 +186,7 @@
     <ClCompile Include="E102\ev00C2_e_escapecarrier.cpp" />
     <ClCompile Include="E102\ev00C7_e_outro.cpp" />
     <ClCompile Include="E102\ev0142_e_betamk2.cpp" />
+    <ClCompile Include="IniFile.cpp" />
     <ClCompile Include="Knuckles\ev0080_k_intro.cpp" />
     <ClCompile Include="Knuckles\ev0085_k_tikalfather.cpp" />
     <ClCompile Include="Knuckles\ev0086_k_leavepastfirst.cpp" />
@@ -277,11 +279,16 @@
     <ClCompile Include="Tails\ev0111_t_ecfools.cpp" />
     <ClCompile Include="Tails\ev0112_t_ecaftertransforming.cpp" />
     <ClCompile Include="Tails\ev0114_t_afterskydeck.cpp" />
+    <ClCompile Include="TextConv.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="include\config.h" />
+    <ClInclude Include="include\IniFile.hpp" />
     <ClInclude Include="include\SADXEventFunctions.h" />
     <ClInclude Include="include\SADXEventList.h" />
     <ClInclude Include="include\SADXEventVariables.h" />
+    <ClInclude Include="include\TextConv.hpp" />
+    <ClInclude Include="include\Utils.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

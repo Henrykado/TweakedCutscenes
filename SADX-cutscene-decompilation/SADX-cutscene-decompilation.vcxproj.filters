@@ -42,164 +42,122 @@
     <ClCompile Include="objects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev006D_a_savebirdsbros.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev004C_t_escapecarrier.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev006E_a_junglebase.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev003A_t_afterchaos4.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev006F_a_finalegg.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev003B_t_tornado1.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0070_a_returncarrier.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev003E_t_flashback.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0071_a_amygetangry.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev004B_t_eggmantakesbirdie.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0072_a_outro.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev004D_t_missile.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0075_a_kidnapped2.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev004E_t_speedhighway.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev006A_a_escapecarrier.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0032_t_meetingsonic.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0060_a_intro1.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0033_t_egghornet.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0061_a_intro2.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0034_t_chaos1.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0062_a_meetsonic.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0035_t_aftercasinopolis.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0063_a_twinklepark.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0038_t_vsknuckles.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0064_a_kidnapped.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0039_t_beforechaos4.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0065_a_prison.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0040_t_afterflashback.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0067_a_past.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0042_t_froggyjungle.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0069_a_eggmantakesbirdie.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="Tails\ev0044_t_enterpast.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D1_b_stationsquare.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0045_t_tikal.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D2_b_car.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0046_t_big.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D3_b_tails.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0048_t_sonicreunion.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D4_b_emeraldcoast.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0050_t_eggwalker.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D8_b_eggcarrier.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0052_t_outro.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D9_b_hotsheltertank.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0055_t_sandhill.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00DC_b_tikal.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0056_t_casinowake.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00DE_b_chaos6.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0110_t_ecafterlanding.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00E2_b_outro.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Tails\ev0111_t_ecfools.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00B2_e_afterfinalegg.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="Tails\ev0112_t_ecaftertransforming.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00B4_e_e101.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="Tails\ev0114_t_afterskydeck.cpp">
+      <Filter>Source Files\Tails</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00B5_e_betadefeated.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F0_l_intro.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00B7_e_fanfare.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F2_l_eggman.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00BC_e_enterwrongroom.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F3_l_knuckles.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00BD_e_e101factory.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F4_l_sonicwakesup.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00BE_e_exitwrongroom.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F5_l_sonicfindsknuckles.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00BF_e_prison.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F7_l_tikalplead.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00C1_e_sonic.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00F9_l_snoozecruise.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00C2_e_escapecarrier.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00FB_l_tikalwakesup.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev00C7_e_outro.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00FD_l_perfectchaos.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="E102\ev0142_e_betamk2.cpp">
-      <Filter>Source Files\E102</Filter>
+    <ClCompile Include="SuperSonic\ev00FE_l_outro.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="Knuckles\ev008B_k_chaos4.cpp">
-      <Filter>Source Files\Knuckles</Filter>
+    <ClCompile Include="SuperSonic\ev00FF_l_supersonic.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
-    <ClCompile Include="Knuckles\ev008C_k_afterchaos4.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev008F_k_tikalaltar.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev009A_k_glubglub.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev009B_k_afterchaos6.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev009D_k_restoreme.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0080_k_intro.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0085_k_tikalfather.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0087_k_chaos2.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0088_k_eggmantricksknuckles.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0091_k_leavepastsecond.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0092_k_followgamma.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0095_k_gotlastpieces.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0099_k_beforechaos6.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0120_k_ectransform1.cpp">
-      <Filter>Source Files\Knuckles</Filter>
-    </ClCompile>
-    <ClCompile Include="Knuckles\ev0121_k_ectransform2.cpp">
-      <Filter>Source Files\Knuckles</Filter>
+    <ClCompile Include="SuperSonic\ev0160_l_chaosgetangry.cpp">
+      <Filter>Source Files\SuperSonic</Filter>
     </ClCompile>
     <ClCompile Include="Sonic\ev000B_s_beforechaos4.cpp">
       <Filter>Source Files\Sonic</Filter>
@@ -229,6 +187,9 @@
       <Filter>Source Files\Sonic</Filter>
     </ClCompile>
     <ClCompile Include="Sonic\ev002A_s_casinowake.cpp">
+      <Filter>Source Files\Sonic</Filter>
+    </ClCompile>
+    <ClCompile Include="Sonic\ev002B_s_beforechaos0.cpp">
       <Filter>Source Files\Sonic</Filter>
     </ClCompile>
     <ClCompile Include="Sonic\ev0003_s_tailscrash.cpp">
@@ -291,143 +252,80 @@
     <ClCompile Include="Sonic\ev0104_s_afterskydeck.cpp">
       <Filter>Source Files\Sonic</Filter>
     </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F2_l_eggman.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F3_l_knuckles.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F4_l_sonicwakesup.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F5_l_sonicfindsknuckles.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F7_l_tikalplead.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F9_l_snoozecruise.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00FD_l_perfectchaos.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00FE_l_outro.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev00FF_l_supersonic.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="SuperSonic\ev0160_l_chaosgetangry.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev003A_t_afterchaos4.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev003B_t_tornado1.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev003E_t_flashback.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev004B_t_eggmantakesbirdie.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev004C_t_escapecarrier.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev004D_t_missile.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev004E_t_speedhighway.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0032_t_meetingsonic.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0033_t_egghornet.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0034_t_chaos1.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0035_t_aftercasinopolis.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0038_t_vsknuckles.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0039_t_beforechaos4.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0040_t_afterflashback.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0042_t_froggyjungle.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0045_t_tikal.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0046_t_big.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0048_t_sonicreunion.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0050_t_eggwalker.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0052_t_outro.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0056_t_casinowake.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0110_t_ecafterlanding.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0111_t_ecfools.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0112_t_ecaftertransforming.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
-    <ClCompile Include="Tails\ev0114_t_afterskydeck.cpp">
-      <Filter>Source Files\Tails</Filter>
+    <ClCompile Include="Knuckles\ev00A0_k_eggmanhotel.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
     <ClCompile Include="Knuckles\ev008A_k_vssonic.cpp">
       <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00D0_b_intro.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Knuckles\ev008B_k_chaos4.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Big\ev00DD_b_leavepast.cpp">
-      <Filter>Source Files\Big</Filter>
+    <ClCompile Include="Knuckles\ev008C_k_afterchaos4.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="SuperSonic\ev00FB_l_tikalwakesup.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
+    <ClCompile Include="Knuckles\ev008F_k_tikalaltar.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Sonic\ev002B_s_beforechaos0.cpp">
-      <Filter>Source Files\Sonic</Filter>
+    <ClCompile Include="Knuckles\ev009A_k_glubglub.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Tails\ev0044_t_enterpast.cpp">
-      <Filter>Source Files\Tails</Filter>
+    <ClCompile Include="Knuckles\ev009B_k_afterchaos6.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Tails\ev0055_t_sandhill.cpp">
-      <Filter>Source Files\Tails</Filter>
+    <ClCompile Include="Knuckles\ev009D_k_restoreme.cpp">
+      <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Knuckles\ev00A0_k_eggmanhotel.cpp">
+    <ClCompile Include="Knuckles\ev0080_k_intro.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0085_k_tikalfather.cpp">
       <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
     <ClCompile Include="Knuckles\ev0086_k_leavepastfirst.cpp">
       <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
+    <ClCompile Include="Knuckles\ev0087_k_chaos2.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0088_k_eggmantricksknuckles.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0091_k_leavepastsecond.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0092_k_followgamma.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0095_k_gotlastpieces.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0099_k_beforechaos6.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0120_k_ectransform1.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
+    <ClCompile Include="Knuckles\ev0121_k_ectransform2.cpp">
+      <Filter>Source Files\Knuckles</Filter>
+    </ClCompile>
     <ClCompile Include="Knuckles\ev0122_k_outsideskydeck.cpp">
       <Filter>Source Files\Knuckles</Filter>
     </ClCompile>
-    <ClCompile Include="Amy\ev0068_a_tikal.cpp">
-      <Filter>Source Files\Amy</Filter>
+    <ClCompile Include="E102\ev00B0_e_intro.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00B2_e_afterfinalegg.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00B4_e_e101.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00B5_e_betadefeated.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00B7_e_fanfare.cpp">
+      <Filter>Source Files\E102</Filter>
     </ClCompile>
     <ClCompile Include="E102\ev00BA_e_tikal.cpp">
       <Filter>Source Files\E102</Filter>
@@ -435,11 +333,122 @@
     <ClCompile Include="E102\ev00BB_e_deliverfrog.cpp">
       <Filter>Source Files\E102</Filter>
     </ClCompile>
+    <ClCompile Include="E102\ev00BC_e_enterwrongroom.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00BD_e_e101factory.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00BE_e_exitwrongroom.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00BF_e_prison.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
     <ClCompile Include="E102\ev00C0_e_reportrear.cpp">
       <Filter>Source Files\E102</Filter>
     </ClCompile>
-    <ClCompile Include="SuperSonic\ev00F0_l_intro.cpp">
-      <Filter>Source Files\SuperSonic</Filter>
+    <ClCompile Include="E102\ev00C1_e_sonic.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00C2_e_escapecarrier.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev00C7_e_outro.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="E102\ev0142_e_betamk2.cpp">
+      <Filter>Source Files\E102</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D0_b_intro.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D1_b_stationsquare.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D2_b_car.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D3_b_tails.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D4_b_emeraldcoast.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D8_b_eggcarrier.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00D9_b_hotsheltertank.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00DC_b_tikal.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00DD_b_leavepast.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00DE_b_chaos6.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Big\ev00E2_b_outro.cpp">
+      <Filter>Source Files\Big</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev006A_a_escapecarrier.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev006D_a_savebirdsbros.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev006E_a_junglebase.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev006F_a_finalegg.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0060_a_intro1.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0061_a_intro2.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0062_a_meetsonic.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0063_a_twinklepark.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0064_a_kidnapped.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0065_a_prison.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0067_a_past.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0068_a_tikal.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0069_a_eggmantakesbirdie.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0070_a_returncarrier.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0071_a_amygetangry.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0072_a_outro.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="Amy\ev0075_a_kidnapped2.cpp">
+      <Filter>Source Files\Amy</Filter>
+    </ClCompile>
+    <ClCompile Include="IniFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextConv.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -450,6 +459,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\SADXEventVariables.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\IniFile.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\TextConv.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Utils.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev0142[] = {
 	(char*)("EV_E101KAI"), &texlist_ev_e101kai,
@@ -82,7 +83,7 @@ void ev0142_e_betamk2(int state)
 		EV_SetPos(E101KAI, -47.700001f, 758.59998f, 962.90002f);
 		EV_SetAng(E101KAI, 0xF9EE, 0x3150, 0);
 		EV_SetAction(E101KAI, &action_taiki_e101kai_null11, &texlist_ev_e101kai, 1.0f, 1, 8);
-		//BGM_Play(MusicIDs_bosse101);
+		if (crazyRobo) BGM_Play(MusicIDs_bosse101);
 		EV_SetAction(player, &action_e_e0027_e102, &E102_TEXLIST, 1.0f, 1, 8);
 		EV_MsgClose();
 		EV_Wait(30);

@@ -2,15 +2,35 @@
 #include "SADXEventFunctions.h"
 #include "SADXEventList.h"
 #include "SADXEventVariables.h"
+#include "IniFile.hpp"
+#include "FunctionHook.h"
+
+bool removeOutroRun = false;
+bool worriedTails = false;
+bool knucklesWalk = true;
+bool betaDash = false;
+bool crazyRobo = false;
+bool muffledAmy = true;
 
 extern "C"
 {
 	__declspec(dllexport) ModInfo SADXModInfo = { ModLoaderVer };
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
-		/*const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
-		bool RemoveOutroRun = config->getBool("", "RemoveOutroRun", false);
-		delete config;*/
+		const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
+		removeOutroRun = config->getBool("", "removeOutroRun", false);
+		worriedTails = config->getBool("", "worriedTails", false);
+		knucklesWalk = config->getBool("", "knucklesWalk", true);
+		betaDash = config->getBool("", "betaDash", false);
+		crazyRobo = config->getBool("", "crazyRobo", false);
+		muffledAmy = config->getBool("", "muffledAmy", true);
+		delete config;
+
+		if (muffledAmy)
+		{
+			helperFunctions.ReplaceFile("SoundData\\VOICE_JP\\WMA\\0517.adx", "system\\sounddata\\0517_jp.adx");
+			helperFunctions.ReplaceFile("SoundData\\VOICE_US\\WMA\\0517.adx", "system\\sounddata\\0517_us.adx");
+		}
 		
 		/* ***DELETE ANY EVENTS YOU DON'T USE***
 		* It makes build time a lot faster and you won't run into problems with other mods from overwriting all of them.

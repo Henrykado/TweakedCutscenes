@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev00F9[] = { 0 };
 
@@ -55,7 +56,7 @@ void ev00F9_l_snoozecruise(int state)
 		EV_Wait(20);
 		EV_SetFace(player, "AEAAD");
 		EV_Wait(1);
-		//EV_SetFace(tails, "NNNNNNNN");
+		if (worriedTails) EV_SetFace(tails, "NNNNNN");
 		EV_SerifWait();
 		EV_CameraPerspective(1, 1, 0x6AAB);
 		WHITE2 = COverlayCreate(0.5f, 0.0099999998f, 1.0f, 1.0f, 1.0f);

@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev009A[] = { 0 };
 
@@ -39,7 +40,9 @@ void ev009A_k_glubglub(int state)
 		EV_CameraAng(1, 50, 0x500, 0x9B28, 0);
 		EV_Wait(10);
 		EV_ClrAction(player);
-		EV_SetAction(player, KNUCKLES_ACTIONS[56], &KNUCKLES_TEXLIST, 1.4f, 1, 0); //Mouth-compatible animation to show the SetFace below.
+		if (knucklesWalk) {
+			EV_SetAction(player, KNUCKLES_ACTIONS[56], &KNUCKLES_TEXLIST, 1.4f, 1, 0); //Mouth-compatible animation to show the SetFace below.
+		} else EV_SetAction(player, KNUCKLES_ACTIONS[57], &KNUCKLES_TEXLIST, 1.4f, 1, 0);
 		EV_MovePoint2(player, -84.269997f, 733.53998f, 983.21997f, 1.4f, 0.0f);
 		EV_Wait(10);
 		EV_CameraChase(player);

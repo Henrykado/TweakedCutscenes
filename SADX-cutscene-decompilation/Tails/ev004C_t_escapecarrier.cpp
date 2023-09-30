@@ -57,7 +57,7 @@ void ev004C_t_escapecarrier(int state)
 			e102->twp->pos.y,
 			e102->twp->pos.z,
 			4);
-		BGM_Play(MusicIDs_egcarer1);
+		BGM_Play(MusicIDs_themiles);
 		EV_CameraTargetFree();
 		EV_CameraAng(1, 0, 0xE000, 0x7F00, 0);
 		EV_CameraPos(1, 0, -2.5f, 1555.8f, 3243.22f);
@@ -98,9 +98,9 @@ void ev004C_t_escapecarrier(int state)
 		EV_SetAction(amy, &action_a_a0002_amy, &AMY_TEXLIST, 0.80000001f, 0, 0);
 		EventSe_Stop(1);
 		Delete_e102lightning();
+		BGM_Stop();
 		EV_SerifPlay(780);
 		EV_Msg(msgTbl_ev004C[TextLanguage][0]); //"\aPlease stop, Tails!"
-		BGM_Stop();
 		EV_Wait(15);
 		EV_CameraAng(1, 0, 1448, 0x7100, 0);
 		EV_CameraPos(1, 0, 7.3499999f, 1528.176f, 3329.5801f);
@@ -129,6 +129,7 @@ void ev004C_t_escapecarrier(int state)
 		EV_WaitAction(amy);
 		EV_ClrFace(amy);
 		EV_SetAction(amy, &action_a_a0004_amy, &AMY_TEXLIST, 1.2f, 1, 16);
+		BGM_Play(MusicIDs_evtbgm00);
 		EV_SerifPlay(783);
 		EV_SetFace(amy, "ECDED");
 		EV_Msg(msgTbl_ev004C[TextLanguage][3]); //"\aThis robot is my friend.\nHe helped m"...

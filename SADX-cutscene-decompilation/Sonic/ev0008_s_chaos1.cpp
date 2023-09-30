@@ -344,7 +344,7 @@ void ev0008_s_chaos1(int state)
 		EV_CameraAng(1, 80, 0x3B9, 0xBEAA, 0xFEC1);
 		EV_SetAction(eggmoble, &action_gm_gm0024_eggmoble, &EV_EGGMOBLE0_TEXLIST, 1.0f, 0, 8);
 		moveObjectAngle2(C_EME_P, 1052.5f, 123.6f, 873.29999f, 1070.5f, 130.7f, 847.27002f, 0, 0, 0, 0, 0x4000, 0x3000, 55);
-		EV_Wait(50);
+		EV_Wait(47);
 		crushLightOn(1051.2f, 135.5f, 857.79999f, 3, 10, 0.40000001f, 2.0f, 0xFFFF64FF, 0xFF1EFF);
 		EV_Wait(8);
 		EventSe_Stop(2);

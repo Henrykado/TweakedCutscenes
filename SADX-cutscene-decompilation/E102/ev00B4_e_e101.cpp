@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev00B4[] = {
 	(char*)("EV_E101_BODY"), &texlist_ev_e101_body,
@@ -171,28 +172,31 @@ void ev00B4_e_e101(int state)
 		EV_CameraPos(0, 100, -51.610001f, 27.040001f, -28.780001f);
 		EV_CameraAng(0, 100, 0xF1A5, 0xB350, 0);
 		EV_Wait(60);
-		//moveObject(e101, 9.9799995f, 14.5f, -4.1500001f, 77.610001f, 14.5f, 14.89f, 30);
-		//EventSe_Play(0, 831, 1800);
-		//EventSe_Volume(0, 200, 1);
-		//SMOKE = CObjSmoke_Create();
-		/*if (SMOKE)
+		if (betaDash)
 		{
-			*(float*)(SMOKE->twp->value.l + 44) = 250.0f;
-			*(float*)(SMOKE->twp->value.l + 48) = 250.0f;
-			*(float*)(SMOKE->twp->value.l + 52) = 250.0f;
-			*(float*)(SMOKE->twp->value.l + 56) = 250.0f;
-			SMOKE->twp->ang.y = 2;
-			SMOKE->twp->ang.x = 2;
+			moveObject(e101, 9.9799995f, 14.5f, -4.1500001f, 77.610001f, 14.5f, 14.89f, 30);
+			EventSe_Play(0, 831, 1800);
+			EventSe_Volume(0, 200, 1);
+			SMOKE = CObjSmoke_Create();
+			if (SMOKE)
+			{
+				*(float*)(SMOKE->twp->value.l + 44) = 250.0f;
+				*(float*)(SMOKE->twp->value.l + 48) = 250.0f;
+				*(float*)(SMOKE->twp->value.l + 52) = 250.0f;
+				*(float*)(SMOKE->twp->value.l + 56) = 250.0f;
+				SMOKE->twp->ang.y = 2;
+				SMOKE->twp->ang.x = 2;
+			}
+			moveObject(SMOKE, 9.9799995f, 2.5f, -4.1500001f, 77.610001f, 2.5f, 14.89f, 30);
+			EV_Wait(20);
+			EventSe_Stop(0);
+			stopObject(SMOKE);
+			if (SMOKE)
+			{
+				SMOKE->twp->ang.y = 0;
+				SMOKE->twp->ang.x = 0;
+			}
 		}
-		moveObject(SMOKE, 9.9799995f, 2.5f, -4.1500001f, 77.610001f, 2.5f, 14.89f, 30);*/
-		//EV_Wait(20);
-		//EventSe_Stop(0);
-		/*stopObject(SMOKE);
-		if (SMOKE)
-		{
-			SMOKE->twp->ang.y = 0;
-			SMOKE->twp->ang.x = 0;
-		}*/
 		EV_SerifWait();
 		EV_Wait(8);
 		EV_MsgClose();
