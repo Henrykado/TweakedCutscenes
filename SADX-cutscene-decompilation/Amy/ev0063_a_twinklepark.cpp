@@ -200,7 +200,7 @@ void ev0063_a_twinklepark(int state)
 		EV_Wait(30);
 		EV_ClrFace(sonic);
 		EV_MsgClose();
-		BGM_Stop();
+		//BGM_Stop();
 		BGM_Play(MusicIDs_theamy);
 		EV_CameraPos(1, 0, 352.5f, 44.779999f, 1607.4f);
 		EV_CameraAng(1, 0, 0xB5, 0xC0C7, 0);

@@ -6,6 +6,8 @@
 #include "FunctionHook.h"
 
 bool removeOutroRun = false;
+bool removeCrashPlane = false;
+bool tenseCrashMusic = false;
 bool worriedTails = false;
 bool knucklesWalk = true;
 bool betaDash = false;
@@ -19,6 +21,8 @@ extern "C"
 	{
 		const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
 		removeOutroRun = config->getBool("", "removeOutroRun", false);
+		removeCrashPlane = config->getBool("", "removeCrashPlane", false);
+		tenseCrashMusic = config->getBool("", "tenseCrashMusic", false);
 		worriedTails = config->getBool("", "worriedTails", false);
 		knucklesWalk = config->getBool("", "knucklesWalk", true);
 		betaDash = config->getBool("", "betaDash", false);
@@ -70,8 +74,8 @@ extern "C"
 		//CutsceneDataList[0x0029]->Function = ev0029_s_eclanding;
 		CutsceneDataList[0x002A]->Function = ev002A_s_casinowake;
 		//CutsceneDataList[0x002B]->Function = ev002B_s_beforechaos0;
-		//CutsceneDataList[0x0030]->Function = ev0030_t_intro;
-		//CutsceneDataList[0x0031]->Function = ev0031_t_emeraldcoast;
+		//CutsceneDataList[0x0030]->Function = ev0030_t_intro;*/
+		if (removeCrashPlane) CutsceneDataList[0x0031]->Function = ev0031_t_emeraldcoast;
 		CutsceneDataList[0x0032]->Function = ev0032_t_meetingsonic;
 		CutsceneDataList[0x0033]->Function = ev0033_t_egghornet;
 		CutsceneDataList[0x0034]->Function = ev0034_t_chaos1;
@@ -220,7 +224,7 @@ extern "C"
 		//CutsceneDataList[0x0131]->Function = ev0131_a_hedgehoghammerwin;
 		//CutsceneDataList[0x0140]->Function = ev0140_e_findjetbooster;
 		//CutsceneDataList[0x0141]->Function = ev0141_e_hotshelter;
-		CutsceneDataList[0x0142]->Function = ev0142_e_betamk2;
+		if (!crazyRobo) CutsceneDataList[0x0142]->Function = ev0142_e_betamk2;
 		//CutsceneDataList[0x0150]->Function = ev0150_b_alertcancelled;
 		CutsceneDataList[0x0160]->Function = ev0160_l_chaosgetangry;
 		/*CutsceneDataList[0x0165]->Function = ev0165_s_crystalring;
@@ -278,8 +282,8 @@ extern "C"
 		//CutsceneDataList[0x0029]->Textures = texTbl_ev0029;
 		CutsceneDataList[0x002A]->Textures = texTbl_ev002A;
 		//CutsceneDataList[0x002B]->Textures = texTbl_ev002B;
-		//CutsceneDataList[0x0030]->Textures = texTbl_ev0030;
-		//CutsceneDataList[0x0031]->Textures = texTbl_ev0031;
+		//CutsceneDataList[0x0030]->Textures = texTbl_ev0030;*/
+		if (removeCrashPlane) CutsceneDataList[0x0031]->Textures = texTbl_ev0031;
 		CutsceneDataList[0x0032]->Textures = texTbl_ev0032;
 		CutsceneDataList[0x0033]->Textures = texTbl_ev0033;
 		CutsceneDataList[0x0034]->Textures = texTbl_ev0034;
@@ -427,7 +431,7 @@ extern "C"
 		//CutsceneDataList[0x0131]->Textures = texTbl_ev0131;
 		//CutsceneDataList[0x0140]->Textures = texTbl_ev0140;
 		//CutsceneDataList[0x0141]->Textures = texTbl_ev0141;
-		CutsceneDataList[0x0142]->Textures = texTbl_ev0142;
+		if (!crazyRobo) CutsceneDataList[0x0142]->Textures = texTbl_ev0142;
 		//CutsceneDataList[0x0150]->Textures = texTbl_ev0150;
 		CutsceneDataList[0x0160]->Textures = texTbl_ev0160;
 		/*CutsceneDataList[0x0165]->Textures = texTbl_ev0165;

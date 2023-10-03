@@ -278,8 +278,8 @@ void ev0008_s_chaos1(int state)
 		EventSe_Pitch(1, -1440, 1);
 		EV_Wait(5);
 		ChgEggMobleMod(5);
-		EV_Wait(7); // <-- Emerald action delay here
-		EV_SetAction(C_EME_P, &action_gm_gm0023cp_m_em_purple, &M_EM_PURPLE_TEXLIST, 1.08f, 1, 0);
+		EV_Wait(7); // Emerald action delay
+		EV_SetAction(C_EME_P, &action_gm_gm0023cp_m_em_purple, &M_EM_PURPLE_TEXLIST, 1.1f, 1, 0);
 		EV_SetPos(C_EME_P, 1052.5f, 123.6f, 873.29999f);
 		EV_SetAng(C_EME_P, 0, 0, 0);
 		EV_CameraPos(1, 100, 1046.87f, 148.23f, 876.47998f);
@@ -343,8 +343,9 @@ void ev0008_s_chaos1(int state)
 		EV_CameraPos(1, 80, 1006.66f, 134.89999f, 859.0f);
 		EV_CameraAng(1, 80, 0x3B9, 0xBEAA, 0xFEC1);
 		EV_SetAction(eggmoble, &action_gm_gm0024_eggmoble, &EV_EGGMOBLE0_TEXLIST, 1.0f, 0, 8);
-		moveObjectAngle2(C_EME_P, 1052.5f, 123.6f, 873.29999f, 1070.5f, 130.7f, 847.27002f, 0, 0, 0, 0, 0x4000, 0x3000, 55);
-		EV_Wait(47);
+		EV_Wait(25);
+		moveObjectAngle2(C_EME_P, 1052.5f, 123.6f, 891.29999f, 1070.5f, 121.6f, 855.27002f, 0, 0, 0, 0, 0, 0x3000, 32);
+		EV_Wait(25);
 		crushLightOn(1051.2f, 135.5f, 857.79999f, 3, 10, 0.40000001f, 2.0f, 0xFFFF64FF, 0xFF1EFF);
 		EV_Wait(8);
 		EventSe_Stop(2);

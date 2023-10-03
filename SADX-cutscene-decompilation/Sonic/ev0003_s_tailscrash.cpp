@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev0003[] = {
 	(char*)("EV_S_T2C_BODY"), &EV_S_T2C_BODY_TEXLIST,
@@ -69,7 +70,8 @@ void ev0003_s_tailscrash(int state)
 		EV_SetAng(player, 0, 0x1400, 0);
 		EV_LookPoint(player, -287.70001f, 65.356003f, 1967.818f);
 		EV_CameraPerspective(1, 1, 0x3111);
-		BGM_Play(MusicIDs_bossevnt);
+		if (tenseCrashMusic) { BGM_Play(MusicIDs_bossevnt); }
+		else BGM_Play(MusicIDs_circuit);
 		EV_CameraAng(0, 0, 0x700, 0x9A00, 0);
 		EV_CameraPos(0, 0, -328.07001f, 2.086f, 1830.488f);
 		EventSe_Pan(0, -128, 1);

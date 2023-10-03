@@ -252,6 +252,7 @@
     <ClCompile Include="SuperSonic\ev00FE_l_outro.cpp" />
     <ClCompile Include="SuperSonic\ev00FF_l_supersonic.cpp" />
     <ClCompile Include="SuperSonic\ev0160_l_chaosgetangry.cpp" />
+    <ClCompile Include="Tails\ev0031_t_emeraldcoast.cpp" />
     <ClCompile Include="Tails\ev0032_t_meetingsonic.cpp" />
     <ClCompile Include="Tails\ev0033_t_egghornet.cpp" />
     <ClCompile Include="Tails\ev0034_t_chaos1.cpp" />
