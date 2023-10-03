@@ -16,9 +16,9 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 
 ### Sonic:  
 02 After Chaos 0 - Water sound stops playing after Chaos leaves; Eggman's laughter gets cut off earlier.  
-03 Tails' Crash - Changed crash BGM from Twinkle Circuit to Fight for My Own Way.  
+03 Tails' Crash - Music stops when Tails crashes.  
 06 Sonic & Tails poolside - Tails says "Ta dah!" while he shows Sonic the chaos emerald, instead of before doing so.  
-08 Before Chaos 1 - The emerald Tails is holding is no longer off-center; Eggman's metal hand thingy now retracts properly;  
+08 Chaos 1 transformation - The emerald Tails is holding is no longer off-center; Eggman's metal hand thingy now retracts properly; Tweaked Eggman's chaos emerald throw to look more natural.  
 09 After Casinopolis - It takes less time for the emerald to drop after Sonic and Tails get charged by Eggman.  
 0B Before Chaos 4 - Fixed the timing of the first english dub voice line; Added smoke from unused code that appears after Sonic and Knuckles collide; Sonic's "Uh oh" now has mouth movement; Sonic looks at Chaos 4 when he emerges.  
 0C After Chaos 4 - The Eggmoble now reaches the Egg Carrier, instead of disappearing before getting there.  
@@ -40,7 +40,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 ### Tails:  
 35 After Casinopolis, 39 Before Chaos 4, 3A After Chaos 4, 110 After landing on Egg Carrier, 112 After Egg Carrier transformation, 114 After Sky Deck - Similar changes to the ones made to Sonic's version of the cutscene.  
 
-34 Before Chaos 1 - Similar changes to the ones made to Sonic's version of the cutscene; Sonic faces Tails while he's talking instead of blankly staring into the sky.
+34 Chaos 1 transformation - Similar changes to the ones made to Sonic's version of the cutscene; Sonic faces Tails while he's talking instead of blankly staring into the sky.
 38 Tails is confronted by Knuckles - Fixed Knuckles' punches using the spindash sound effects.  
 3E Tails' Flashback - Removes the Jet Anklet if you have it; Removed like 5 frames of a random spot in the jungle.  
 42 Tails finds Froggy in the jungle - Froggy no longer jumps above the emerald, so it actually looks like he's picking it up.  
