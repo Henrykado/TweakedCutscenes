@@ -32,7 +32,7 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 104 After Sky Deck - Tails falls earlier so he can hear what Sonic is saying.  
 1A Eggman takes Birdie's emerald - Gamma's theme plays when he appears; Sonic looks at Gamma before the other characters stop looking at Eggman.  
 1B After Gamma - The music stops after Amy interrupts Sonic; Sadness plays while Amy is explaining how Gamma is different; Music stops again after rumble, and then the Egg Carrier theme begins playing again after Amy asks Sonic what he will do next.  
-1D After Chaos 6 - Removed the second jump Sonic does, the one where you can see the Eggmoble getting stuck in the Egg Carrier.  
+1D After Chaos 6 - Reduced the volume of the wind sfx that plays in the start of the cutscene; Removed the second jump Sonic does. (optional)  
 20 Perfect Chaos mural - Removed random spindash sound.  
 24 Egg Viper - Sonic no longer plays an idle animation while he's still falling.  
 26 Outro - The screen now fades white before Sonic and Tails start running around Mystic Ruins; Removed Sonic and Tails looking at each other while running.  
@@ -78,7 +78,7 @@ B4 Before Beta - Beta no longer dashes backwards (optional), since it's position
 B5 After Beta - Beta's walking sounds are now synced properly.  
 B7 E100 Series meeting - Now plays the Egg Carrier's theme instead of Gamma's theme; Froggy shows up on the screen display when Eggman mentions him.  
 BA Tikal - Some Chao sounds removed and others made quieter.  
-BB Gamma delivers Froggy - Eggman now walks faster, and therefore notices Froggy faster too.  
+BB Gamma delivers Froggy - Now plays the Egg Carrier's theme instead of Gamma's theme; Eggman now walks faster, and therefore notices Froggy faster too.  
 BC Gamma enters the wrong room - Gamma's idle animation is slower; Gamma exclaims "BETA?" while walking backwards.  
 C1 Before Sonic - Eggman leaves earlier/faster.  
 C2 After Sonic - Sonic now looks at Amy when saying "I'll nail that Eggman!".  
