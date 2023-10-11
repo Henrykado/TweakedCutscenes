@@ -13,7 +13,9 @@ void ev00D4_b_emeraldcoast(int state)
 		EV_CameraOn();
 		EV_PadOff();
 		EV_CanselOn();
-		SetBankDir(101);
+		if (GetModuleHandle(L"sadx-sound-overhaul") != nullptr) {
+			SetBankDir(111); 
+		} else SetBankDir(101);
 		EV_Wait(1);
 		EV_InitPlayer(0);
 		EV_SetPos(player, 998.29999f, 78.0f, 777.29999f);

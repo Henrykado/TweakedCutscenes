@@ -5,3 +5,4 @@ extern bool tenseCrashMusic;
 extern bool worriedTails;
 extern bool knucklesWalk;
 extern bool betaDash;
+extern bool skipSecondJump;

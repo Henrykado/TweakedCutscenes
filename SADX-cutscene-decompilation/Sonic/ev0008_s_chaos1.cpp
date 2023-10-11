@@ -104,7 +104,7 @@ void ev0008_s_chaos1(int state)
 		EV_SetAction(tails, &action_m_m0136_miles, &MILES_TEXLIST, 1.0f, 1, 1);
 		EV_MovePoint2(tails, 983.79999f, 126.5f, 848.70001f, 0.3f, 0.059999999f);
 		EV_Wait(1);
-		moveObjectOn(C_EME_P, -0.39f, 0.0f, 0.39f, -1, tails);
+		moveObjectOn(C_EME_P, -0.48f, 0.0f, 0.48f, -1, tails);
 		EV_SetAction(player, &action_s_s0009_sonic, &SONIC_TEXLIST, 0.5f, 1, 8);
 		EV_ClrFace(player);
 		EV_SetFace(player, "PCPDDP");
@@ -284,15 +284,16 @@ void ev0008_s_chaos1(int state)
 		EV_SetAng(C_EME_P, 0, 0, 0);
 		EV_CameraPos(1, 100, 1046.87f, 148.23f, 876.47998f);
 		EV_CameraAng(1, 100, 0x4F9, 0x8BFF, 0xC1);
-		EV_Wait(30);
+		EV_Wait(60);
 		EventSe_Oneshot(1336, 128, 0, 0);
-		EV_Wait(100);
+		EV_Wait(40);
+		EventSe_Stop(1);
+		EV_Wait(30);
 		if(HAND_3){
 			FreeTask(HAND_3);
 			HAND_3 = 0;
 		}
 		EV_SetAction(player, &action_s_s0009_sonic, &SONIC_TEXLIST, 0.80000001f, 1, 8);
-		EventSe_Stop(1);
 		EV_CameraPos(0, 0, 1046.23f, 143.45f, 881.0f);
 		EV_CameraAng(0, 0, 0xDFD, 0x6FFF, 0xC1);
 		EV_CameraPos(1, 90, 1046.12f, 143.78999f, 881.97998f);
@@ -306,6 +307,8 @@ void ev0008_s_chaos1(int state)
 		EV_Wait(1);
 		SetWaterChaos0();
 		MoveChaos0(1096.2f, 126.3f, 864.79999f, 60);
+		EventSe_Play(2, 1337, 1800);
+		EventSe_Volume(2, -30, 1);
 		EV_CameraPos(0, 0, 971.79999f, 128.3f, 856.70001f);
 		EV_CameraAng(0, 0, 0xAB9, 0xA9AA, 0x2C1);
 		EV_SerifPlay(446);
@@ -325,7 +328,7 @@ void ev0008_s_chaos1(int state)
 		EV_CameraAng(1, 0, 0x6B9, 0x9EAA, 0xF5C1);
 		EV_CameraPos(1, 110, 1037.66f, 134.47f, 848.67999f);
 		EV_CameraAng(1, 110, 0xFB9, 0x9AAA, 0xF5C1);
-		EventSe_Volume(2, 5, 70);
+		EventSe_Volume(2, -60, 70);
 		ToHumanChaos0();
 		EV_Wait(120);
 		EV_CameraPos(1, 0, 975.20001f, 130.5f, 860.79999f);
@@ -366,8 +369,8 @@ void ev0008_s_chaos1(int state)
 		EV_CameraAng(1, 0, 0x1AB9, 0xD6AA, 0xFEC1);
 		EV_CameraPos(1, 100, 1035.66f, 130.39999f, 865.0f);
 		EV_CameraAng(1, 100, 0x21B9, 0xD3AA, 0xFEC1);
-		EventSe_Play(2, 1337, 1800);
-		EventSe_Volume(2, -25, 1);
+		//EventSe_Play(2, 1337, 1800);
+		//EventSe_Volume(2, -100, 1);
 		EV_Wait(30);
 		crushLightOff();
 		COverlaySetSpeed(FLASH, -0.02f);
@@ -471,7 +474,7 @@ void ev0008_s_chaos1(int state)
 		EV_SetAction(player, &action_s_s0009_sonic, &SONIC_TEXLIST, 0.89999998f, 1, 0);
 		FLASH = COverlayCreate(0.1f, 0.050000001f, 1.0f, 1.0f, 0.89999998f);
 		EV_Wait(5);
-		EventSe_Stop(2);
+		//EventSe_Stop(2);
 		EventSe_Oneshot(1339, 120, 0, 0);
 		EV_Wait(30);
 		crushLightOff();

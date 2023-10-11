@@ -8,7 +8,7 @@ PVMEntry texTbl_ev00BF[] = {
 	0
 };
 
-void ev00BF_e_prison(int state)
+void ev00BF_e_prison(int state) // sub_677EF0
 {
 	switch (state) {
 	case 1:
@@ -18,7 +18,9 @@ void ev00BF_e_prison(int state)
 		EV_CanselOn();
 		EV_Wait(1);
 		EV_InitPlayer(0);
-		SetBankDir(96);
+		if (GetModuleHandle(L"sadx-sound-overhaul") != nullptr) {
+			SetBankDir(108);
+		} else SetBankDir(96);
 		EV_SetPos(player, 140.0f, 0.0f, 43.0f);
 		EV_SetAng(player, 0, 0xC000, 0);
 		EV_CreatePlayer(2, AmyRose, -100.0f, 0.1f, -33.369999f, 0, 0xF215, 0);
@@ -195,7 +197,7 @@ void ev00BF_e_prison(int state)
 		EV_MsgW(90, msgTbl_ev00BF[TextLanguage][10]); //"\aI bet you'd be mean to him, \nyou bul"...
 		EV_ClrFace(amy);
 		EV_MsgClose();
-		EV_CameraPos(0, 0, -116.06f, 9.46f, -5.2800002f);
+		EV_CameraPos(0, 0, -134.0f, 15.0f, 54.0f);
 		EV_CameraAng(0, 0, 0xFCE4, 0xEBF3, 0);
 		EV_Wait(20);
 		EV_SetFace(amy, "FF");
@@ -203,7 +205,7 @@ void ev00BF_e_prison(int state)
 		EV_MsgW(60, msgTbl_ev00BF[TextLanguage][11]); //"\aWhy not help us out instead?"
 		EV_ClrFace(amy);
 		EV_MsgClose();
-		EV_CameraPos(0, 70, -115.91f, 10.39f, 15.97f);
+		EV_CameraPos(0, 70, -143.85f, 15.93f, 80.25f);
 		EV_ClrAction(amy);
 		EV_SetAction(amy, &action_a_a0121_amy, &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_MovePoint2(amy, -100.0f, 0.0f, -11.0f, 0.75f, 0.059999999f);
@@ -211,40 +213,8 @@ void ev00BF_e_prison(int state)
 		EV_Wait(20);
 		EV_LookFree(player);
 		EV_SetAction(player, E102_ACTIONS[29], &E102_TEXLIST, 1.0f, 1, 16);
-		EV_SetPos(player, -100.0f, 0.0f, 20.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 20.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 21.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 21.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 22.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 22.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 23.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 23.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 24.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 24.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 25.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 25.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 26.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 26.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 27.0f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 27.5f);
-		EV_Wait(2);
-		EV_SetPos(player, -100.0f, 0.0f, 28.0f);
-		EV_Wait(2);
+		moveObject(player, -100.0f, 0.0f, 20.0f, -100.0f, 0.0f, 28.0f, 34);
+		EV_Wait(34);
 		EV_SetAction(amy, &action_a_a0120_amy, &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_LookObject(amy, player, 0.0f, 14.0f, 0.0f);
 		stopObject(obj_ver1_wing);
@@ -279,7 +249,7 @@ void ev00BF_e_prison(int state)
 		EV_CameraAng(0, 0, 0xF8E4, 0x7FF3, 0);
 		EV_Wait(30);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 2.5f, 1, 0);
-		dsPlay_timer(1326, 213385217, 1, 0, 40);
+		dsPlay_timer(1326, 0xCB80001, 1, 0, 40);
 		EV_SerifPlay(1255);
 		EV_MsgW(40, msgTbl_ev00BF[TextLanguage][13]); //"\aDoes not compute."
 		EV_MsgClose();
@@ -287,7 +257,7 @@ void ev00BF_e_prison(int state)
 		EV_Wait(30);
 		EV_SerifPlay(1256);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 2.5f, 1, 0);
-		dsPlay_timer(1326, 213385218, 1, 0, 120);
+		dsPlay_timer(1326, 0xCB80002, 1, 0, 120);
 		EV_Msg(msgTbl_ev00BF[TextLanguage][14]); //"\aWhy try to save that \nwhich is usele"...
 		EV_SerifWait();
 		EV_MsgClose();
@@ -295,7 +265,7 @@ void ev00BF_e_prison(int state)
 		EV_Wait(30);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 2.5f, 1, 0);
 		EV_SerifPlay(1257);
-		dsPlay_timer(1326, 213385219, 1, 0, 50);
+		dsPlay_timer(1326, 0xCB80003, 1, 0, 50);
 		EV_MsgW(40, msgTbl_ev00BF[TextLanguage][15]); //"\aDoes not compute."
 		EV_MsgClose();
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 1.0f, 1, 0);
@@ -317,7 +287,7 @@ void ev00BF_e_prison(int state)
 		EV_CameraPos(0, 60, -104.08f, 8.3000002f, -3.8699999f);
 		EV_Wait(30);
 		EV_SetAction(obj_ver1_wing, &action_w_w0121_wing, &VER1_WING_TEXLIST, 1.0f, 1, 0);
-		dsPlay_timer(1336, 213385220, 1, 0, 120);
+		dsPlay_timer(1336, 0xCB80004, 1, 0, 120);
 		EV_Wait(30);
 		EV_MsgClose();
 		EV_CameraPerspective(0, 1, 0x3111);
@@ -339,7 +309,7 @@ void ev00BF_e_prison(int state)
 		//EV_ClrFace(amy);
 		EV_SerifWait();
 		EV_MsgClose();
-		dsPlay_timer(1337, 213385221, 1, 0, 240);
+		dsPlay_timer(1337, 0xCB80005, 1, 0, 240);
 		EV_CameraPos(0, 60, -127.69f, 18.389999f, 24.120001f);
 		EV_Wait(60);
 		EV_SetAction(amy, AMY_ACTIONS[69], &AMY_TEXLIST, 1.0f, 1, 0);
@@ -352,7 +322,7 @@ void ev00BF_e_prison(int state)
 		EV_CameraPos(0, 0, -91.660004f, 17.67f, 15.83f);
 		EV_CameraAng(0, 0, 0xFBE4, 0x65F3, 0);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 3.0f, 1, 0);
-		dsPlay_timer(1326, 213385222, 1, 0, 150);
+		dsPlay_timer(1326, 0xCB80006, 1, 0, 150);
 		EV_CameraPos(0, 90, -79.779999f, 19.690001f, -0.14f);
 		EV_Wait(90);
 		EV_CameraPos(0, 0, -143.59f, 22.68f, 26.860001f);
@@ -365,7 +335,7 @@ void ev00BF_e_prison(int state)
 		EV_Wait(30);
 		EV_SetAng(obj_ver1_wing, 0, 0xCB27, 0);
 		EV_CameraPos(0, 180, -150.17f, 25.059999f, 26.530001f);
-		dsPlay_timer(1334, 213385223, 1, 0, 60);
+		//dsPlay_timer(1334, 0xCB80007, 1, 0, 60);
 		EV_SetAction(player, E102_ACTIONS[0], &E102_TEXLIST, 0.30000001f, 1, 16);
 		EV_Wait(60);
 		EV_SerifPlay(1261);
@@ -379,7 +349,7 @@ void ev00BF_e_prison(int state)
 		EV_CameraPos(0, 80, -94.910004f, 9.1800003f, 48.32f);
 		EV_SetFace(amy, "C");
 		EV_SerifPlay(1262);
-		EV_Msg(msgTbl_ev00BF[TextLanguage][20]); //"\aGet going!"
+		EV_Msg(msgTbl_ev00BF[TextLanguage][20]); //"\aHuh?"
 		EV_Wait(10);
 		EV_ClrFace(amy);
 		EV_Wait(50);
@@ -409,7 +379,7 @@ void ev00BF_e_prison(int state)
 		EV_Wait(60);
 		EV_SetFace(amy, "E");
 		EV_SerifPlay(1263);
-		EV_MsgW(60, msgTbl_ev00BF[TextLanguage][21]); //"\aHuh?"
+		EV_MsgW(60, msgTbl_ev00BF[TextLanguage][21]); //"\aWhy are you letting us go?"
 		EV_ClrFace(amy);
 		EV_MsgClose();
 		EV_Wait(30);
@@ -432,13 +402,13 @@ void ev00BF_e_prison(int state)
 		EV_SetAng(obj_ver1_wing, 0, 0xC000, 0);
 		EV_Wait(30);
 		EV_SerifPlay(1264);
-		EV_MsgW(60, msgTbl_ev00BF[TextLanguage][22]); //"\aWhy are you letting us go?"
+		EV_MsgW(60, msgTbl_ev00BF[TextLanguage][22]); //"\aIt is dangerous here."
 		EV_Wait(15);
 		EV_CameraPos(0, 150, -139.28999f, 20.02f, 23.84f);
 		EV_CameraAng(0, 150, 0xF4E4, 0xBAF3, 0x150);
 		EV_Wait(45);
 		EV_SerifPlay(1265);
-		EV_Msg(msgTbl_ev00BF[TextLanguage][23]); //"\aIt is dangerous here."
+		EV_Msg(msgTbl_ev00BF[TextLanguage][23]); //"\aHurry. We will be arriving at \nthe M"...
 		EV_SerifWait();
 		EV_MsgClose();
 		EV_CameraPerspective(0, 1, 0x1C72);
@@ -448,7 +418,7 @@ void ev00BF_e_prison(int state)
 		EV_Wait(30);
 		EV_SetFace(amy, "EE");
 		EV_SerifPlay(1266);
-		EV_Msg(msgTbl_ev00BF[TextLanguage][24]); //"\aHurry. We will be arriving at \nthe M"...
+		EV_Msg(msgTbl_ev00BF[TextLanguage][24]); //"\aSo..."
 		EV_SerifWait();
 		EV_Wait(5);
 		EV_ClrFace(amy);

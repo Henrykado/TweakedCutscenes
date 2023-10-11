@@ -13,6 +13,7 @@ bool knucklesWalk = true;
 bool betaDash = false;
 bool crazyRobo = false;
 bool muffledAmy = true;
+bool skipSecondJump = true;
 
 extern "C"
 {
@@ -28,6 +29,7 @@ extern "C"
 		betaDash = config->getBool("", "betaDash", false);
 		crazyRobo = config->getBool("", "crazyRobo", false);
 		muffledAmy = config->getBool("", "muffledAmy", true);
+		skipSecondJump = config->getBool("", "skipSecondJump", true);
 		delete config;
 
 		if (muffledAmy)

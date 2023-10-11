@@ -37,7 +37,6 @@ void ev00BB_e_deliverfrog(int state)
 		SetBankDir(107);
 		EventSe_Init(2);
 		WHITE = COverlayCreate(1.0f, 0.1f, 1.0f, 1.0f, 1.0f);
-		BGM_Play(MusicIDs_thee102);
 		EV_CameraPerspective(1, 1, 0x3C72);
 		EV_SetPos(player, -32.0f, -5.0999999f, -42.0f);
 		EV_SetAng(player, 0, 0x8000, 0);
@@ -101,6 +100,7 @@ void ev00BB_e_deliverfrog(int state)
 		{
 			COverlaySetSpeed(WHITE, -0.016666668f);
 		}
+		BGM_Play(MusicIDs_egcarer1);
 		EV_Wait(50);
 		EV_SetAction(player, E102_ACTIONS[45], &E102_TEXLIST, 0.1f, 1, 0);
 		EV_Wait(30);

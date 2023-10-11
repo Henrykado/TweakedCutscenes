@@ -19,7 +19,9 @@ void ev0065_a_prison(int state)
 		EV_CanselOn();
 		EV_Wait(1);
 		EV_InitPlayer(0);
-		SetBankDir(96);
+		if (GetModuleHandle(L"sadx-sound-overhaul") != nullptr) {
+			SetBankDir(108);
+		} else SetBankDir(96);
 		EV_CameraPos(1, 0, 100.2f, 24.200001f, 72.550003f);
 		EV_CameraAng(1, 0, 0xFF00, 0xFF00, 0);
 		EV_CameraPos(1, 120, -100.0f, 24.200001f, 72.550003f);
@@ -209,7 +211,7 @@ void ev0065_a_prison(int state)
 		EV_MsgW(90, msgTbl_ev0065[TextLanguage][11]); //"\aI know you might hurt us both."
 		EV_ClrFace(player);
 		EV_MsgClose();
-		EV_CameraPos(0, 0, -116.06f, 9.46f, -5.2800002f);
+		EV_CameraPos(0, 0, -134.0f, 15.0f, 54.0f);
 		EV_CameraAng(0, 0, 0xFCE4, 0xEBF3, 0);
 		EV_Wait(20);
 		EV_SetFace(player, "FF");
@@ -217,7 +219,7 @@ void ev0065_a_prison(int state)
 		EV_MsgW(60, msgTbl_ev0065[TextLanguage][12]); //"\aPlease, Mr. Robot..."
 		EV_ClrFace(player);
 		EV_MsgClose();
-		EV_CameraPos(0, 70, -115.91f, 10.39f, 15.97f);
+		EV_CameraPos(0, 70, -143.85f, 15.93f, 80.25f);
 		EV_ClrAction(player);
 		EV_SetAction(player, &action_a_a0121_amy, &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_MovePoint2(player, -100.0f, 0.0f, -10.0f, 0.75f, 0.059999999f);
@@ -383,7 +385,7 @@ void ev0065_a_prison(int state)
 		EV_Wait(30);
 		EV_SetAng(obj_ver1_wing, 0, 0xCB27, 0);
 		EV_CameraPos(0, 180, -150.17f, 25.059999f, 26.530001f);
-		dsPlay_timer(1334, 213385223, 1, 0, 60);
+		//dsPlay_timer(1334, 213385223, 1, 0, 60);
 		EV_SetAction(e102, E102_ACTIONS[0], &E102_TEXLIST, 0.30000001f, 1, 16);
 		EV_Wait(60);
 		EV_SerifPlay(905);

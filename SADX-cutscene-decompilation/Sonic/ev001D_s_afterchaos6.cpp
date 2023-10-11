@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "config.h"
 
 PVMEntry texTbl_ev001D[] = {
 	(char*)("EV_EGGMOBLE0"), &EV_EGGMOBLE0_TEXLIST,
@@ -33,7 +34,7 @@ void ev001D_s_afterchaos6(int state)
 		eggmoble = GetEggMobleTask();
 		EV_ClrAction(eggmoble);
 		EV_SetAction(eggmoble, &action_gm_gm0002_eggmoble, &EV_EGGMOBLE0_TEXLIST, 1.0f, 1, 0);
-		dsPlay_timer_v(1337, 0xCB80001, 1, 100, 600, 0.0f, 780.0f, -386.04001f);
+		dsPlay_timer_v(1337, 0xCB80001, 1, 25, 600, 0.0f, 780.0f, -386.04001f);
 		EV_Wait(1);
 		seteggmobleparam(0.5, 0x100);
 		EV_CameraPos(0, 0, -24.51f, 754.06f, -310.82001f);
@@ -154,7 +155,7 @@ void ev001D_s_afterchaos6(int state)
 		EV_ClrAction(player);
 		EV_PlayPad(0, &EV001D_S_JUMP);
 		EV_Wait(40);
-		eggmoble_moveandturn(-600.0f, 300.0f, -500.0f, 0, -0x500, 0, 120, 1);
+		eggmoble_moveandturn(-850.0f, 100.0f, -605.0f, 0, -0x500, 0, 120, 1);
 		EV_Wait(20);
 		EV_CameraTargetFree();
 		EV_CameraPos(0, 0, -233.08f, 753.90997f, -382.20001f);
@@ -165,20 +166,25 @@ void ev001D_s_afterchaos6(int state)
 		EV_Wait(15);
 		EV_CameraTargetFree();
 		EV_Wait(40);
-		/*EV_CameraTargetFree();
-		EV_CameraPos(0, 0, -447.75f, 635.0f, -436.70001f);
-		EV_CameraAng(0, 0, 0xDCF8, 0x3180, 0);
-		SONIC_JUMP = CSkyWalk_create2(player, 600.0f);
-		EV_SetPos(player, -400.0f, 600.0f, -420.0f);
-		EV_SetAng(player, 0, 0xC000, 0);
-		EV_Wait(1);
-		EV_ClrAction(player);
-		EV_PlayPad(0, &EV001D_S_JUMP);
-		EV_Wait(20);
-		if(SONIC_JUMP){
-			FreeTask(SONIC_JUMP);
-			SONIC_JUMP = 0;
-		}*/
+		if (!skipSecondJump)
+		{
+			//delete_eggmoble();
+			EV_CameraTargetFree();
+			EV_CameraPos(0, 0, -447.75f, 635.0f, -436.70001f);
+			EV_CameraAng(0, 0, 0xDCF8, 0x3180, 0);
+			SONIC_JUMP = CSkyWalk_create2(player, 600.0f);
+			EV_SetPos(player, -420.0f, 600.0f, -426.0f);
+			EV_SetAng(player, 0, 0xC000, 0);
+			EV_Wait(1);
+			EV_ClrAction(player);
+			EV_PlayPad(0, &EV001D_S_JUMP);
+			EV_Wait(18);
+			if (SONIC_JUMP) {
+				FreeTask(SONIC_JUMP);
+				SONIC_JUMP = 0;
+			}
+			//EV_Wait(40);
+		}
 		B_OUT = COverlayCreate(0.016666668f, 0.2f, 0.0f, 0.0f, 0.0f);
 		EV_Wait(90);
 		break;
