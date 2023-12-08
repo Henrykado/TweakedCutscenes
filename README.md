@@ -40,9 +40,10 @@ You can see them in the Debug tab of the SADX Mod Manager (they are preceded by 
 ### Tails:  
 35 After Casinopolis, 39 Before Chaos 4, 3A After Chaos 4, 110 After landing on Egg Carrier, 112 After Egg Carrier transformation, 114 After Sky Deck - Similar changes to the ones made to Sonic's version of the cutscene.  
 
+31 After Prototype Plane Crash - Changed the crashed plane's textures to match the textures used in Tails' Intro cutscene; You can now see the crashed plane's debris, as opposed to them being rendered underneath the sand.
 34 Chaos 1 transformation - Similar changes to the ones made to Sonic's version of the cutscene; Sonic faces Tails while he's talking instead of blankly staring into the sky.
 38 Tails is confronted by Knuckles - Fixed Knuckles' punches using the spindash sound effects.  
-3E Tails' Flashback - Removes the Jet Anklet if you have it; Removed like 5 frames of a random spot in the jungle.  
+3E Tails' Flashback - Removes the Jet Anklet if you have it; Removes Sonic's upgrades if he has them; Removed like 5 frames of a random spot in the jungle.  
 42 Tails finds Froggy in the jungle - Froggy no longer jumps above the emerald, so it actually looks like he's picking it up.  
 46 Tails lets go of Froggy - He lets go of Froggy faster after being jumpscared by Big.  
 4C After Gamma - The music stops when Amy interrupts Tails.  
