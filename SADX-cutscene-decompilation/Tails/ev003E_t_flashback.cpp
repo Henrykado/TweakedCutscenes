@@ -26,19 +26,17 @@ void ev003E_t_flashback(int state)
 		BGM_Play(MusicIDs_evtbgm00);
 		BLACK = COverlayCreate(-0.001f, 0.80000001f, 0.0f, 0.0f, 0.0f);
 		SEPIA = COverlayCreate(-1.0e-10f, 0.36000001f, 0.60000002f, 0.44f, 0.16f);
-
-		/*idk if this visibly does anything but it's never run normally because this code is normally above COverlayCreate.
-		It checks for BLACK and SEPIA before they've been created (and needs them to not crash, hence the move).*/
-		if (enableUnusedCode) {
-			COverlaySetPriority(BLACK, -1.0f);
-			COverlaySetPriority(SEPIA, -1.1f);
-		}
-
 		EV_SetPos(player, -955.59998f, 9.8199997f, -181.60001f);
 		EV_SetAng(player, 65472, 0x2800, 64759);
 		EV_CreatePlayer(2, SonicTheHedgehog, -701.70001f, 4.0f, 100.1f, 0, 0xFA00, 0);
 		EV_Wait(1);
 		sonic = EV_GetPlayer(2);
+
+		// Removes Sonic's upgrades
+		GetPlayerWorkPtr(2)->equipment &= ~Upgrades_CrystalRing;
+		GetPlayerWorkPtr(2)->equipment &= ~Upgrades_LightShoes;
+		GetPlayerWorkPtr(2)->equipment &= ~Upgrades_AncientLight;
+
 		EV_SetPos(sonic, -779.40002f, 1.21f, -106.77f);
 		EV_SetAng(sonic, 0, 0x1049, 0);
 		COverlaySetSpeed(BLACK, -0.0049999999f);

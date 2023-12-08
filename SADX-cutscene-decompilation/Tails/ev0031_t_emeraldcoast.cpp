@@ -2,9 +2,8 @@
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
 
-PVMEntry texTbl_ev0031[] = {
-	//(char*)("M_HEAD_1"), &M_HEAD_1_TEXLIST,
-	//(char*)("OBJ_CRASHPLANE"), &M_TR_P_TEXLIST,
+PVMEntry texTbl_ev0031[] = { 
+	(char*)("EV_S_T2C_BODY"), &EV_S_T2C_BODY_TEXLIST,
 	0 
 };
 
@@ -17,8 +16,7 @@ void ev0031_t_emeraldcoast(int state)
 		EV_CameraOn();
 		EV_PadOff();
 		EV_CanselOn();
-		//createModel(6920.9502f, 13.0f, -2205.8f, 0, 0xC000, 0, 1.0f, 1.0f, 1.0f, &object_tr2_zangai_zangai_zangai1_5, &M_TR_P_TEXLIST, 0);
-		//EV_CreateObjectFunc(&zan, miles_with_ptr, 6913.9502f, -6.9f, -2205.1499f, -0x1C00, 0xC000, 0x900);
+		EV_CreateObjectFunc(&zan, ev_trzangai, 6912.0f, 13.0f, -2204.5f, 0, 0xC000, 0);
 		EV_CreatePlayer(2, SonicTheHedgehog, 6420.0f, 1.33f, -2150.0f, 0, 0x4000, 0);
 		EV_Wait(1);
 		EV_SetPos(player, 6888.9502f, 1.03f, -2203.1499f);

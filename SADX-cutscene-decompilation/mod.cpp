@@ -17,12 +17,19 @@ bool skipSecondJump = true;
 
 extern "C"
 {
+	void LoadPlaneTexture()
+	{
+		njSetTexture(&EV_S_T2C_BODY_TEXLIST);
+	}
+
 	__declspec(dllexport) ModInfo SADXModInfo = { ModLoaderVer };
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
+		WriteCall((void*)0x6F9314, LoadPlaneTexture);
+
 		const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
 		removeOutroRun = config->getBool("", "removeOutroRun", false);
-		removeCrashPlane = config->getBool("", "removeCrashPlane", false);
+		//removeCrashPlane = config->getBool("", "removeCrashPlane", false);
 		tenseCrashMusic = config->getBool("", "tenseCrashMusic", false);
 		worriedTails = config->getBool("", "worriedTails", false);
 		knucklesWalk = config->getBool("", "knucklesWalk", true);
@@ -77,7 +84,7 @@ extern "C"
 		CutsceneDataList[0x002A]->Function = ev002A_s_casinowake;
 		//CutsceneDataList[0x002B]->Function = ev002B_s_beforechaos0;
 		//CutsceneDataList[0x0030]->Function = ev0030_t_intro;*/
-		if (removeCrashPlane) CutsceneDataList[0x0031]->Function = ev0031_t_emeraldcoast;
+		CutsceneDataList[0x0031]->Function = ev0031_t_emeraldcoast;
 		CutsceneDataList[0x0032]->Function = ev0032_t_meetingsonic;
 		CutsceneDataList[0x0033]->Function = ev0033_t_egghornet;
 		CutsceneDataList[0x0034]->Function = ev0034_t_chaos1;
@@ -284,8 +291,8 @@ extern "C"
 		//CutsceneDataList[0x0029]->Textures = texTbl_ev0029;
 		CutsceneDataList[0x002A]->Textures = texTbl_ev002A;
 		//CutsceneDataList[0x002B]->Textures = texTbl_ev002B;
-		//CutsceneDataList[0x0030]->Textures = texTbl_ev0030;*/
-		if (removeCrashPlane) CutsceneDataList[0x0031]->Textures = texTbl_ev0031;
+		//CutsceneDataList[0x0030]->Textures = texTbl_ev0030;
+		CutsceneDataList[0x0031]->Textures = texTbl_ev0031;
 		CutsceneDataList[0x0032]->Textures = texTbl_ev0032;
 		CutsceneDataList[0x0033]->Textures = texTbl_ev0033;
 		CutsceneDataList[0x0034]->Textures = texTbl_ev0034;
