@@ -4,6 +4,7 @@
 #include "SADXEventVariables.h"
 #include "IniFile.hpp"
 #include "FunctionHook.h"
+#include "OBJECT_SonicPointingFinger.h"
 
 bool removeOutroRun = false;
 bool removeCrashPlane = false;
@@ -26,6 +27,11 @@ extern "C"
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
 		WriteCall((void*)0x6F9314, LoadPlaneTexture);
+
+		if (GetModuleHandle(L"SA1_Chars") != nullptr)
+		{
+			WriteData<NJS_OBJECT>((NJS_OBJECT*)0x2DD8708, OBJECT_SonicPointingFinger);
+		}
 
 		const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
 		removeOutroRun = config->getBool("", "removeOutroRun", false);
