@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev006D[] = {
 	(char*)("VER1_WING"), &VER1_WING_TEXLIST,
@@ -15,6 +16,7 @@ void ev006D_a_savebirdsbros(int state)
 	switch (state) {
 	case 1:
 		player = EV_GetPlayer(0);
+		disableAmyDressMorph = true;
 		//task_gattai_EV006D = 0;
 		tikal_dispSwitch(0);
 		EV_InitObject(player);
@@ -64,6 +66,7 @@ void ev006D_a_savebirdsbros(int state)
 		EV_Wait(450);
 		EV_ClrPath(tails);
 		EV_ClrPath(player);
+		disableAmyDressMorph = false;
 		tails->twp->timer.b[3] &= ~4u;
 		tails->twp->timer.b[3] &= ~0x10u;
 		delete_task_gattai_EV006D();
@@ -293,6 +296,7 @@ void ev006D_a_savebirdsbros(int state)
 		EV_Wait(60);
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		tails = EV_GetPlayer(3);
 		if (tails)
 		{

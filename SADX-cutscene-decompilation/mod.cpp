@@ -16,8 +16,26 @@ bool crazyRobo = false;
 bool muffledAmy = true;
 bool skipSecondJump = true;
 
+bool disableAmyDressMorph = false;
+
+//FunctionHook<void, ObjectMaster*> SoundManager_Delete_h(SoundManager_Delete);
+
 extern "C"
 {
+	//void SoundManager_Delete_r(ObjectMaster* objm)
+	//{
+	//	return;
+	//	SoundManager_Delete_h.Original(objm);
+	//}
+	FunctionPointer(void, AddDressMorphs, (ObjectMaster* a1), 0x485F40);
+	FunctionHook<void, ObjectMaster*> AddDressMorphs_h(AddDressMorphs);
+
+	void AddDressMorphs_r(ObjectMaster* a1)
+	{
+		if (disableAmyDressMorph) return;
+		AddDressMorphs_h.Original(a1);
+	}
+
 	void LoadPlaneTexture()
 	{
 		njSetTexture(&EV_S_T2C_BODY_TEXLIST);
@@ -26,12 +44,15 @@ extern "C"
 	__declspec(dllexport) ModInfo SADXModInfo = { ModLoaderVer };
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
+		AddDressMorphs_h.Hook(AddDressMorphs_r);
 		WriteCall((void*)0x6F9314, LoadPlaneTexture);
 
 		if (GetModuleHandle(L"SA1_Chars") != nullptr)
 		{
 			WriteData<NJS_OBJECT>((NJS_OBJECT*)0x2DD8708, OBJECT_SonicPointingFinger);
 		}
+
+		//SoundManager_Delete_h.Hook(SoundManager_Delete_r);
 
 		const IniFile* config = new IniFile(std::string(path) + "\\config.ini");
 		removeOutroRun = config->getBool("", "removeOutroRun", false);
@@ -50,7 +71,7 @@ extern "C"
 			helperFunctions.ReplaceFile("SoundData\\VOICE_JP\\WMA\\0517.adx", "system\\sounddata\\0517_jp.adx");
 			helperFunctions.ReplaceFile("SoundData\\VOICE_US\\WMA\\0517.adx", "system\\sounddata\\0517_us.adx");
 		}
-		
+
 		/* ***DELETE ANY EVENTS YOU DON'T USE***
 		* It makes build time a lot faster and you won't run into problems with other mods from overwriting all of them.
 		* texTbls must end with 0 or the game will crash.

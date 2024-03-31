@@ -160,7 +160,7 @@ void ev00FD_l_perfectchaos(int state)
 		EV_Wait(15);
 		EV_SetAction(player, &action_s_s0038_sonic, &SONIC_TEXLIST, 0.5f, 1, 4);
 		eggcarrier = getobjModel(0);
-		moveObject(eggcarrier, 3500.0f, 1500.0f, 100.0f, 2000.0f, 1000.0f, 100.0f, 450);
+		moveObject(eggcarrier, 3500.0f, 1500.0f, 100.0f, 2000.0f, 1000.0f, 100.0f, 550);
 		EV_Wait(30);
 		EV_CameraPos(1, 30, 803.38f, 154.60001f, -241.03999f);
 		EV_CameraAng(1, 30, 0xF31, 0xBD00, 0);
@@ -193,7 +193,7 @@ void ev00FD_l_perfectchaos(int state)
 		EV_CameraPos(0, 0, 87.169998f, 213.74001f, -720.28998f);
 		EV_CameraAng(0, 0, 0xFB31, 0x200, 0);
 		EV_SerifPlay(1479);
-		EV_MsgW(90, msgTbl_ev00FD[TextLanguage][3]); //"\aThis Egg Carrier 2 was made because\n"...
+		EV_MsgW(110, msgTbl_ev00FD[TextLanguage][3]); //"\aThis Egg Carrier 2 was made because\n"...
 		EV_CameraPerspective(0, 1, 0x2AAB);
 		EV_CameraPos(0, 0, 1795.42f, 1494.8101f, -217.61f);
 		EV_CameraAng(0, 0, 0xE231, 0x4B00, 0xF600);
@@ -212,7 +212,7 @@ void ev00FD_l_perfectchaos(int state)
 		EV_CameraPos(0, 1000, 156.85001f, 544.20001f, -278.26999f);
 		EV_SerifPlay(1481);
 		EV_Msg(msgTbl_ev00FD[TextLanguage][5]); //"\aNow you must be destroyed \nat all co"...
-		EV_Wait(55);
+		/*EV_Wait(55);
 		EventSe_Oneshot(14, 50, 0, 0);
 		EV_Wait(10);
 		EventSe_Oneshot(14, 50, 0, 0);
@@ -222,23 +222,25 @@ void ev00FD_l_perfectchaos(int state)
 		EventSe_Oneshot(14, 50, 0, 0);
 		EV_Wait(10);
 		EventSe_Oneshot(14, 50, 0, 0);
-		EV_Wait(10);
+		EV_Wait(10);*/
+		EV_SerifWait();
 		EV_MsgClose();
 		EventSe_Play(2, 1336, 90);
 		EventSe_Volume(2, 120, 40);
 		EventSe_Pitch(2, 8000, 40);
-		EventSe_Oneshot(14, 120, 0, 0);
+		//EventSe_Oneshot(14, 120, 0, 0);
 		EV_Wait(15);
 		EventSe_Stop(1);
 		EV_CameraPos(0, 0, 935.96997f, 599.81f, 31.629999f);
 		EV_CameraAng(0, 0, 0xFE31, 0x4085, 0);
-		EV_Wait(10);
+		EV_Wait(40);
+		/*EV_Wait(10);
 		EventSe_Oneshot(14, 50, 0, 0);
 		EV_Wait(10);
 		EventSe_Oneshot(14, 50, 0, 0);
 		EV_Wait(10);
 		EventSe_Oneshot(14, 50, 0, 0);
-		EV_Wait(10);
+		EV_Wait(10);*/
 		EV_CameraPos(1, 80, 1481.66f, 768.91998f, 24.67f);
 		EV_CameraAng(1, 80, 0xF631, 0x4085, 0);
 		EV_CameraPerspective(0, 80, 0x5555);
@@ -294,14 +296,14 @@ void ev00FD_l_perfectchaos(int state)
 		ChgSphereBombMode(BOM, 1);
 		EV_Wait(30);
 		EventSe_Oneshot(1340, 120, 0, 0);
-		EV_Wait(150);
+		EV_Wait(100);
 		EV_ClrAction(eggmoble);
 		EV_SetAction(eggmoble, &action_gm_gm0036_eggmoble, &EV_EGGMOBLE0_TEXLIST, 1.0f, 0, 0);
 		EV_SetAction(eggmoble, &action_gm_gm0002_eggmoble, &EV_EGGMOBLE0_TEXLIST, 1.0f, 1, 0);
-		EV_Wait(10);
+		EV_Wait(15);
 		EV_CameraPerspective(0, 1, 0x2AAB);
 		EV_CameraPos(0, 0, 65.080002f, 237.60001f, -654.83002f);
-		EV_CameraAng(0, 0, 0x1E31, 0x2600, 0xD00);
+		EV_CameraAng(0, 0, 0x1D80, 0x2600, 0xD00);
 		EV_CameraPos(0, 140, 111.43f, 252.17999f, -694.92999f);
 		stopObject(eggcarrier);
 		EV_SerifPlay(1482);
@@ -310,7 +312,7 @@ void ev00FD_l_perfectchaos(int state)
 		EV_Wait(60);
 		EV_MsgClose();
 		EV_SetAng(player, 0, 0xD265, 0);
-		EV_Wait(30);
+		EV_Wait(5);
 		EV_CameraPos(0, 0, 797.76001f, 155.42f, -248.48f);
 		EV_CameraAng(0, 0, 0x431, 0xB500, 0);
 		EV_CameraPos(0, 140, 799.09003f, 155.42f, -253.3f);
@@ -471,7 +473,7 @@ void ev00FD_l_perfectchaos(int state)
 		EV_ClrAction(tikal);
 		EV_SetAction(tikal, &action_j_j0017_tikal, &TIKAL_TEXLIST, 0.5f, 1, 32);
 		EV_SetFace(tikal, "CDECDE");
-		EV_Wait(5);
+		EV_Wait(20);
 		EV_SerifPlay(1470);
 		EV_Msg(msgTbl_ev00FD[TextLanguage][11]); //"\aMy heart has always been in the \nMas"...
 		EV_Wait(130);
@@ -571,11 +573,10 @@ void ev00FD_l_perfectchaos(int state)
 		EV_SerifWait();
 		EV_ClrFace(tikal);
 		EV_MsgClose();
-		EV_Wait(15);
 		EV_CameraPos(1, 20, 846.53003f, 157.09f, -198.06f);
 		EV_CameraAng(1, 20, 0xFF31, 0x1385, 0);
 		EV_SetFace(player, "FFF");
-		EV_Wait(5);
+		EV_Wait(15);
 		EV_SerifPlay(1487);
 		EV_Msg(msgTbl_ev00FD[TextLanguage][16]); //"\aHow can that help?"
 		EV_Wait(10);

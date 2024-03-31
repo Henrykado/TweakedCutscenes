@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev006A[] = {
 	(char*)("VER1_WING"), &VER1_WING_TEXLIST,
@@ -604,6 +605,7 @@ void ev006A_a_escapecarrier(int state)
 		EV_SetAction(tails, &ev_action_m_m0002_miles, &MILES_TEXLIST, 1.0f, 1, 0);
 		EV_Wait(10);
 		EV_ClrAction(player);
+		disableAmyDressMorph = true;
 		EV_SetAction(player, &action_a_a0014_amy, &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_FreeObject(&obj_ver1_wing);
 		EV_Wait(5);
@@ -640,10 +642,12 @@ void ev006A_a_escapecarrier(int state)
 		EV_Wait(150);
 		B_OUT = COverlayCreate(0.016666668f, 0.2f, 0.0f, 0.0f, 0.0f);
 		EV_Wait(90);
+		disableAmyDressMorph = false;
 		delete_task_gattai_EV006A();
 		EV_Wait(1);
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		e102 = EV_GetPlayer(4);
 		tails->twp->timer.b[3] &= ~4u;
 		tails->twp->timer.b[3] &= ~0x10u;

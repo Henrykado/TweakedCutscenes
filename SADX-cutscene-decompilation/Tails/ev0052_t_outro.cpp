@@ -74,7 +74,7 @@ void ev0052_t_outro(int state)
 		EV_SetAction(sonic, &action_s_s0068_sonic, &SONIC_TEXLIST, 0.5f, 1, 6);
 		EV_LookPoint(sonic, 857.11603f, 138.82401f, 1096.548f);
 		EV_Wait(10);
-		//EV_SetFace(sonic, "P");
+		EV_SetFace(sonic, "P");
 		EV_Wait(20);
 		EV_ClrPath(player);
 		EV_SetPos(player, 882.07001f, 126.6f, 1089.6647f);
@@ -109,7 +109,7 @@ void ev0052_t_outro(int state)
 		EV_SetAction(sonic, SONIC_ACTIONS[6], &SONIC_TEXLIST, 2.0f, 1, 0);
 		EV_SetPath(player, &epathtag_cube0052_t2, 0.2f, 0);
 		EV_SetPath(sonic, &epathtag_cube0052_s1, 0.2f, 0);
-		EV_SetFace(player, "bbbbbb");
+		EV_SetFace(player, "bbb");
 		EV_CameraPos(1, 0, 982.96002f, 132.13f, 753.12268f);
 		EV_CameraAng(1, 0, 0x400, 0x9500, 0);
 		EV_CameraPos(0, 86, 943.29999f, 132.17f, 683.28998f);
@@ -129,7 +129,7 @@ void ev0052_t_outro(int state)
 		EV_CameraAng(0, 50, 0x104A, 0xA583, 0);
 		EV_Wait(25);
 		EV_LookFree(player);
-		EV_SetFace(player, "bbPbG");
+		EV_SetFace(player, "bPbG");
 		EV_Wait(25);
 		EV_CameraPos(0, 60, 841.28802f, 67.150002f, 608.85498f);
 		EV_CameraAng(0, 60, 0xB3B, 0xA125, 0);
@@ -150,7 +150,7 @@ void ev0052_t_outro(int state)
 		EV_CameraAng(0, 60, 0x1477, 0xC054, 0x300);
 		EV_Wait(60);
 		EV_LookFree(player);
-		EV_SetFace(player, "bbbbbb");
+		EV_SetFace(player, "bbb");
 		EV_CameraPos(0, 50, 666.39001f, -14.026f, 619.77399f);
 		EV_CameraAng(0, 50, 0x15EA, 0xBF7C, 0x100);
 		EV_Wait(50);
@@ -160,7 +160,7 @@ void ev0052_t_outro(int state)
 		EV_CameraAng(0, 22, 0x1A36, 0xB723, 0);
 		EV_Wait(22);
 		EV_LookFree(player);
-		EV_SetFace(player, "bbbbbbbbGbbbbbbPbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+		EV_SetFace(player, "AAAAAAAAGbbAAAAbP");
 		EV_CameraPos(0, 40, 608.59998f, -23.969999f, 601.92999f);
 		EV_CameraAng(0, 40, 0x98D, 0xC414, 0);
 		EV_Wait(40);
@@ -187,6 +187,7 @@ void ev0052_t_outro(int state)
 		EV_Wait(26);
 		EV_CameraPos(0, 44, 340.431f, 12.147f, 548.90002f);
 		EV_CameraAng(0, 44, 0xA17, 0xC6BB, 0);
+		EV_SetFace(player, "bbbbbbbbbbbbbbb");
 		EV_Wait(44);
 		EV_CameraTargetObj(0, 20, player, 0.0f, 5.0f, 0.0f, 0);
 		EV_CameraChase(player);

@@ -285,6 +285,8 @@
   <ItemGroup>
     <ClInclude Include="include\config.h" />
     <ClInclude Include="include\IniFile.hpp" />
+    <ClInclude Include="include\mod.h" />
+    <ClInclude Include="include\OBJECT_SonicPointingFinger.h" />
     <ClInclude Include="include\SADXEventFunctions.h" />
     <ClInclude Include="include\SADXEventList.h" />
     <ClInclude Include="include\SADXEventVariables.h" />

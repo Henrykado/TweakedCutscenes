@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev004D[] = {
 	(char*)("EV_EGGMOBLE0"), &EV_EGGMOBLE0_TEXLIST,
@@ -30,6 +31,7 @@ void ev004D_t_missile(int state)
 		EV_SetAng(player, 0, 0x4300, 0);
 		EV_SetMode(player, 0);
 		EV_CreatePlayer(2, AmyRose, 340.01001f, 0.0099999998f, 1630.25f, 0, 0x7800, 0);
+		disableAmyDressMorph = true;
 		EV_Wait(1);
 		amy = EV_GetPlayer(2);
 		EV_SetPos(amy, 340.01001f, 12.0099999998f, 1630.25f);
@@ -80,6 +82,7 @@ void ev004D_t_missile(int state)
 		EV_CameraAng(1, 170, 0x247, 0x3207, 0);
 		EV_ClrPath(player);
 		EV_ClrPath(amy);
+		disableAmyDressMorph = false;
 		kill_task_gattai_EV004D();
 		EV_ClrPath(obj_ver2_wing);
 		EV_SetMode(amy, 3);
@@ -587,6 +590,7 @@ void ev004D_t_missile(int state)
 		gSkyScale = SkyBoxScale_StationSquare[ssActNumber][ClipLevel];
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		gSkyScale = SkyBoxScale_StationSquare[ssActNumber][ClipLevel];
 		EV_CameraOff();
 		EV_PadOn();

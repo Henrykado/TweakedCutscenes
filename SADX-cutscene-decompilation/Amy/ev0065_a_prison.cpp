@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev0065[] = {
 	(char*)("VER1_WING"), &VER1_WING_TEXLIST,
@@ -13,6 +14,7 @@ void ev0065_a_prison(int state)
 	switch (state) {
 	case 1:
 		player = EV_GetPlayer(0);
+		disableAmyDressMorph = true;
 		obj_ver1_wing = 0;
 		EV_CameraOn();
 		EV_PadOff();
@@ -353,6 +355,7 @@ void ev0065_a_prison(int state)
 			e102->twp->pos.y + 17.0f,
 			e102->twp->pos.z - 15.0f, 60);
 		EV_ClrAction(player);
+		disableAmyDressMorph = false;
 		EV_SetAction(player, AMY_ACTIONS[69], &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_SetAction(e102, E102_ACTIONS[2], &E102_TEXLIST, 2.0f, 1, 0);
 		EV_SetFace(player, "EC");
@@ -516,6 +519,7 @@ void ev0065_a_prison(int state)
 		EV_Wait(2);
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		stopObjectAll();
 		BGM_Stop();
 		EV_InitPlayer(0);

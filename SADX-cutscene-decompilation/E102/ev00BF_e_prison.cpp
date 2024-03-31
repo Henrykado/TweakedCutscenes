@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev00BF[] = {
 	(char*)("VER1_WING"), &VER1_WING_TEXLIST,
@@ -31,6 +32,7 @@ void ev00BF_e_prison(int state) // sub_677EF0
 		EV_ClrAction(player);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 0.5f, 1, 0);
 		amy = EV_GetPlayer(2);
+		disableAmyDressMorph = true;
 		EV_SetPos(amy, -100.0f, 0.1f, -33.369999f);
 		EV_SetAng(amy, 0, 0xF215, 0);
 		EV_ClrAction(amy);
@@ -39,8 +41,14 @@ void ev00BF_e_prison(int state) // sub_677EF0
 		EV_Wait(1);
 		EV_SetPos(player, 140.0f, 0.0f, 43.0f);
 		EV_SetAng(player, 0, 0xC000, 0);
-		EV_SetPos(obj_ver1_wing, -100.0f, 0.0f, -33.369999f);
-		EV_SetAng(obj_ver1_wing, 0, 0xF215, 0);
+		EV_SetPos(obj_ver1_wing,
+			amy->twp->pos.x,
+			amy->twp->pos.y,
+			amy->twp->pos.z);
+		EV_SetAng(obj_ver1_wing,
+			amy->twp->ang.x,
+			0x4000 - amy->twp->ang.y,
+			amy->twp->ang.z);
 		EV_SetAction(obj_ver1_wing, &action_w_w0114_wing, &VER1_WING_TEXLIST, 1.0f, 1, 1);
 		BGM_Play(MusicIDs_e102);
 		EV_CameraPerspective(0, 1, 0x238E);
@@ -96,7 +104,7 @@ void ev00BF_e_prison(int state) // sub_677EF0
 		EV_Wait(40);
 		EV_ClrFace(amy);
 		EV_MsgClose();
-		EV_SetAction(obj_ver1_wing, &action_w_w0116_wing, &VER1_WING_TEXLIST, 1.0f, 0, 0);
+		EV_SetAction(obj_ver1_wing, &action_w_w0116_wing, &VER1_WING_TEXLIST, 1.0f, 0, 0); // doesn't work for some reason
 		EV_Wait(30);
 		EV_CameraPerspective(0, 1, 0x1555);
 		EV_CameraPos(0, 0, -102.08f, 4.23f, -52.950001f);
@@ -302,6 +310,7 @@ void ev00BF_e_prison(int state) // sub_677EF0
 			60);
 		EV_SetAction(player, E102_ACTIONS[2], &E102_TEXLIST, 2.0f, 1, 0);
 		EV_ClrAction(amy);
+		disableAmyDressMorph = false;
 		EV_SetAction(amy, AMY_ACTIONS[69], &AMY_TEXLIST, 1.0f, 1, 0);
 		EV_SetFace(amy, "EC");
 		EV_SerifPlay(1260);
@@ -464,6 +473,7 @@ void ev00BF_e_prison(int state) // sub_677EF0
 		EV_Wait(30);
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		stopObjectAll();
 		BGM_Stop();
 		EV_InitPlayer(0);

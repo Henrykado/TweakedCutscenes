@@ -1,6 +1,7 @@
 #include "SADXModLoader.h"
 #include "SADXEventFunctions.h"
 #include "SADXEventVariables.h"
+#include "mod.h"
 
 PVMEntry texTbl_ev004C[] = { 0 };
 
@@ -342,6 +343,7 @@ void ev004C_t_escapecarrier(int state)
 			e102->twp->pos.z);
 		throughplayer_on(player);
 		throughplayer_on(amy);
+		disableAmyDressMorph = true;
 		EV_SetPath(player, &epathtag_cube004c_14, 0.60000002f, 2);
 		EV_SetPath(player, &epathtag_cube004c_22, 2.0f, 2);
 		EV_Wait(40);
@@ -383,10 +385,12 @@ void ev004C_t_escapecarrier(int state)
 		EV_Wait(140);
 		BLACKOUT = COverlayCreate(0.016666668f, 0.1f, 0.0f, 0.0f, 0.0f);
 		EV_Wait(60);
+		disableAmyDressMorph = false;
 		FreeTaskGattaiEV004C();
 		EV_Wait(1);
 		break;
 	case 2:
+		disableAmyDressMorph = false;
 		amy = EV_GetPlayer(2);
 		e102 = EV_GetPlayer(4);
 		EV_CameraOff();

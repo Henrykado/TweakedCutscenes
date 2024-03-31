@@ -42,9 +42,6 @@
     <ClCompile Include="objects.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Tails\ev0031_t_emeraldcoast.cpp">
-      <Filter>Source Files\Tails</Filter>
-    </ClCompile>
     <ClCompile Include="IniFile.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -393,6 +390,9 @@
     <ClCompile Include="Tails\ev004E_t_speedhighway.cpp">
       <Filter>Source Files\Tails</Filter>
     </ClCompile>
+    <ClCompile Include="Tails\ev0031_t_emeraldcoast.cpp">
+      <Filter>Source Files\Tails</Filter>
+    </ClCompile>
     <ClCompile Include="Tails\ev0032_t_meetingsonic.cpp">
       <Filter>Source Files\Tails</Filter>
     </ClCompile>
@@ -474,6 +474,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Utils.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\OBJECT_SonicPointingFinger.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mod.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

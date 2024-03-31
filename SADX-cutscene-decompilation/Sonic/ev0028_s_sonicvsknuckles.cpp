@@ -139,8 +139,7 @@ void ev0028_s_sonicvsknuckles(int state)
 		EV_SetAng(player, 0xFF6E, 0xCF2, 0xFFA2);
 		EV_SetAction(player, &action_s_s0001_sonic, &SONIC_TEXLIST, 1.0f, 0, 0);
 		EV_SetAction(player, &action_s_s0006_sonic, &SONIC_TEXLIST, 0.5f, 1, 4);
-		//EV_LookFree(player);
-		EV_LookObject(player, knuckles, 0.0f, 0.0f, 0.0f);
+		EV_LookFree(player);
 		EV_SerifWait();
 		EV_Wait(1);
 		EV_MsgClose();
@@ -157,6 +156,7 @@ void ev0028_s_sonicvsknuckles(int state)
 		EV_Wait(45);
 		EV_MsgClose();
 		EV_ClrFace(knuckles);
+		EV_LookObject(player, knuckles, 0.0f, 0.0f, 0.0f);
 		EV_CameraPos(0, 0, 66.419998f, 79.57f, 306.0f);
 		EV_CameraAng(0, 0, 0xFDA9, 0x200F, 0);
 		EV_CameraPos(0, 160, 60.740002f, 79.57f, 311.63f);

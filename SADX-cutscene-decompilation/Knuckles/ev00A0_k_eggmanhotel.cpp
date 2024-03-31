@@ -57,12 +57,12 @@ void ev00A0_k_eggmanhotel(int state)
 		EV_CameraPos(0, 100, -367.48001f, 17.0f, 1659.52f);
 		EV_CameraAng(0, 100, 0xF59E, 0x4DE7, 0);
 		EventSe_Play(0, 1335, 1800);
-		crushLightOn(-374.0f, 13.29f, 1661.0f, 1, 5, 1.8f, 0.0049999999f, 0xB4FFFF91, 0xFFFF32u);
-		EV_Wait(20);
 		EV_SetAction(eggman, &action_g_0011_eggman, &EGGMAN_TEXLIST, 1.3f, 1, 8);
 		EV_MovePoint2(eggman, -398.32001f, 0.0f, 1666.29f, 0.09f, 0.059999999f);
+		crushLightOn(-374.0f, 13.29f, 1661.0f, 1, 5, 0.5f, 0.005f, 0xB4FFFF91, 0xFFFF32u);
+		EV_Wait(20);
 		crushLightOff();
-		EventSe_Stop(0);
+		//EventSe_Stop(0);
 		EV_SerifPlay(1168);
 		EV_MsgW(1, msgTbl_ev00A0[TextLanguage][1]); //"\aWhat's he got there?"
 		EV_Wait(70);

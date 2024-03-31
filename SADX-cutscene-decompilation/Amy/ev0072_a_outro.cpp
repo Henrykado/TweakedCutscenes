@@ -74,9 +74,9 @@ void ev0072_a_outro(int state)
 		EV_CameraPos(1, 90, -141.0f, 748.0f, -381.0f);
 		EV_CameraTargetObj(1, 0, player, 0.0f, 5.0f, 0.0f, 0);
 		EV_MovePoint2(player, -137.5f, 747.0f, -380.0f, 0.01f, 0.001f);
-		EV_Wait(74);
+		EV_Wait(75);
 		EV_CameraTargetFree();
-		EV_Wait(5);
+		EV_Wait(10);
 		EV_MoveFree(player);
 		EV_SetPos(player, -133.3f, 747.29999f, -379.85001f);
 		EV_SetAng(player, 0, 0xD029, 0x329);
@@ -162,7 +162,7 @@ void ev0072_a_outro(int state)
 		EV_CameraAng(1, 0, 0xC7A, 0xB929, 0);
 		EV_CameraPos(1, 10, -139.8f, 751.09998f, -380.70001f);
 		EV_ClrFace(player);
-		EV_SetFace(player, "DC0");
+		EV_SetFace(player, "P0");
 		EV_Wait(20);
 		EV_ClrFace(player);
 		EV_LookFree(player);
@@ -237,7 +237,7 @@ void ev0072_a_outro(int state)
 		EV_MoveFree(obj_wing_t);
 		moveObject(obj_wing_p, -185.8f, 750.20001f, -417.0f, -180.8f, 770.20001f, -427.0f, 34);
 		moveObject(obj_wing_t, -191.8f, 748.20001f, -417.0f, -186.8f, 778.20001f, -427.0f, 34);
-		EV_Wait(10);
+		EV_Wait(20);
 		EV_CameraPos(0, 0, -169.89999f, 755.09998f, -371.89999f);
 		EV_CameraAng(0, 0, 0xFFF1, 0x354B, 0);
 		EV_CameraPos(0, 60, -169.89999f, 749.09998f, -371.89999f);
@@ -308,7 +308,7 @@ void ev0072_a_outro(int state)
 		EV_CameraAng(0, 50, 0x195F, 0x4D9B, 0xDD0);
 		EV_Wait(80);
 		EV_InitPlayer(0);
-		EV_SetPos(player, -179.39999f, 744.5f, -378.0f);
+		EV_SetPos(player, -179.39999f, 743.5f, -378.0f);
 		EV_SetAng(player, 0, 0xC000, 0x329);
 		moveObjectAngle2(
 			obj_wing1,
@@ -349,7 +349,7 @@ void ev0072_a_outro(int state)
 		EV_CameraAng(1, 0, 0x607, 0xA4F1, 0xFF30);
 		EV_CameraAng(1, 130, 0x107, 0xA4F1, 0xFF30);
 		EV_ClrFace(player);
-		EV_SetFace(player, "ACCC");
+		EV_SetFace(player, "ACb");
 		EV_SerifPlay(995);
 		EV_Msg(msgTbl_ev0072[TextLanguage][4]); //"\aI'm so happy!"
 		EV_SerifWait();
@@ -422,9 +422,8 @@ void ev0072_a_outro(int state)
 		EV_SetFace(player, "APPPPPPPPbbbDGCCC");
 		EV_SerifPlay(999);
 		EV_Msg(msgTbl_ev0072[TextLanguage][8]); //"\aAnd by that time \nit's gonna be too "...
-		EV_Wait(10);
-		EV_SetAction(player, AMY_ACTIONS[29], &AMY_TEXLIST, 0.60000002f, 0, 16);
-		EV_Wait(20);
+		EV_SetAction(player, AMY_ACTIONS[29], &AMY_TEXLIST, 0.64f, 0, 16);
+		EV_Wait(30);
 		EV_CameraPos(0, 15, 312.89999f, 575.0f, -726.70001f);
 		EV_CameraAng(0, 15, 0x900, 0x5021, 0xFF00);
 		EV_Wait(15);
