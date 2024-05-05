@@ -6,13 +6,15 @@ PVMEntry texTbl_ev003E[] = { 0 };
 
 void ev003E_t_flashback(int state)
 {
+	CharObj2* co2 = CharObj2Ptrs[0];
 	switch (state) {
 	case 1:
 		player = EV_GetPlayer(0);
-		equipment = GetPlayerWorkPtr(0)->equipment; //Store the player's upgrades
+		equipment = co2->Upgrades; //Store the player's upgrades
 		eq_saved = 1;
 		//if (enableUnusedCode) {
-			GetPlayerWorkPtr(0)->equipment &= ~Upgrades_JetAnklet; //Remove the Jet Anklet.
+			co2->Upgrades &= ~Upgrades_JetAnklet; //Remove the Jet Anklet.
+			co2->AnimationThing.field_2 = 0;
 		/* }
 		else {
 			GetPlayerWorkPtr(0)->equipment &= ~Upgrades_RhythmBadge; //Remove the Rhythm badge (Vanilla).
@@ -190,7 +192,7 @@ void ev003E_t_flashback(int state)
 	case 2:
 		if (eq_saved)
 		{
-			GetPlayerWorkPtr(0)->equipment = equipment;
+			co2->Upgrades = equipment;
 			eq_saved = 0;
 		}
 		EV_CameraOff();
