@@ -15,6 +15,7 @@ bool betaDash = false;
 bool crazyRobo = false;
 bool muffledAmy = true;
 bool skipSecondJump = true;
+bool disableFMVRender = false;
 
 bool disableAmyDressMorph = false;
 
@@ -30,10 +31,18 @@ extern "C"
 	FunctionPointer(void, AddDressMorphs, (ObjectMaster* a1), 0x485F40);
 	FunctionHook<void, ObjectMaster*> AddDressMorphs_h(AddDressMorphs);
 
+	FunctionHook<void> DoCrashingEggCarrierCutsceneThing_h(DoCrashingEggCarrierCutsceneThing);
+
 	void AddDressMorphs_r(ObjectMaster* a1)
 	{
 		if (disableAmyDressMorph) return;
 		AddDressMorphs_h.Original(a1);
+	}
+	
+	void DoCrashingEggCarrierCutsceneThing_r()
+	{
+		if (disableFMVRender) return;
+		DoCrashingEggCarrierCutsceneThing_h.Original();
 	}
 
 	void LoadPlaneTexture()
@@ -45,6 +54,7 @@ extern "C"
 	__declspec(dllexport) void __cdecl Init(const char* path, const HelperFunctions& helperFunctions)
 	{
 		AddDressMorphs_h.Hook(AddDressMorphs_r);
+		DoCrashingEggCarrierCutsceneThing_h.Hook(DoCrashingEggCarrierCutsceneThing_r);
 		WriteCall((void*)0x6F9314, LoadPlaneTexture);
 
 		if (GetModuleHandle(L"SA1_Chars") != nullptr)
@@ -64,6 +74,7 @@ extern "C"
 		crazyRobo = config->getBool("", "crazyRobo", false);
 		muffledAmy = config->getBool("", "muffledAmy", true);
 		skipSecondJump = config->getBool("", "skipSecondJump", true);
+		disableFMVRender = config->getBool("", "disableFMVRender", false);
 		delete config;
 
 		if (muffledAmy)
